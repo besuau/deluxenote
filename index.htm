@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34473101-4"></script>
@@ -10,15 +10,262 @@
   gtag('config', 'UA-34473101-4');
 </script>
 <link rel="shortcut icon" href="DeluxeNote.ico" />
-<title>Deluxe Note</title>
+<title>Deluxe Note · Magnifying Music Notation</title>
 <meta name"description" content="Music Notation Software for Windows">
 <meta name"keywords" content="music, notation, score, sheet music">
-<meta name="copyright" content="Besuau S.L." />
+<meta name="copyright" content="Besuau S.L.U." />
+<style>
+.Menu { color: #a0a0a0a; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
+a.Menu { color: #7F7F7F; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:12px; padding-bottom:12px; padding-left:16px; padding-right:16px; }
+a:hover.Menu { border-style:solid; border-width: 1px; border-color: #C45911; color: #C45911; font-weight:bold; background-color:#f7f7f7; border-radius: 6px; }
+.Title { color: #000000; font-size:22pt; font-weight:bold; font-family:candara,verdana,arial; text-decoration: none; }
+.TitleNumber { color: #C45911; font-size:25pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
+.Title2 { color: #C45911; font-size:16pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
+.Content { color: #666666; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
+a.Link { color: #C45911; font-size:11pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; padding-top:8px; padding-bottom:8px; padding-left:9px; padding-right:9px; border-radius: 6px; }
+a:hover.Link { border-style:solid; border-width: 1px; border-color: #C45911; padding-left:8px; padding-right:8px; }
+.Highlight { color: #444444; font-size:12pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; line-height: 26px; }
+.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
+a.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
+a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; border-radius: 6px; }
+.Feature { width:500px; padding:5px; margin-top:20; margin-bottom:40; }
+.LargeFeature { width:580px; padding:5px; margin-top:20; margin-bottom:40; }
+</style>
 </head>
-<body style="background-color:#FFFFF;">
-<table width="100%" height="100%">
+<body style="background-color:#FFFFF; margin:0px;" >
+<center>
+<table width="1024" border="0" cellspacing="10" cellpadding="0">
 <tr>
-	<td align="center" valign="center"><img src="DN.png" border=0" /></td>
+	<td align="left" valign="top"><img src="DeluxeNoteLogo.png" border=0" /></td>
+	<td align="center" valign="top" class="Menu">
+	<div style="margin-top:12px;">
+		<a href="download/deluxe_note.msi" class="Menu" onClick="gtag('event','Download',{'event_category':'Installer','event_label':'deluxe_note.msi'});"><b>DOWNLOAD</b></a>
+		<a href="mailto:deluxenote@besuau.com" class="Menu" onClick="gtag('event','Email',{'event_category':'Buy','event_label':'BUY'});">BUY</a>
+		<a href="mailto:deluxenote@besuau.com" class="Menu">CONTACT</a>
+	</div>
+	</td>
+	<td width="0%" align="right" valign="top">
+	<div style="margin-top:13px;margin-right:-140px;">
+		<font class="Footer"><img src="En16.png" valign="center" border=0" style="vertical-align:middle; margin-top:-2px;" /> English</font>
+		<!--a href="#" class="Footer" onmouseover="FR.src='Fr16.png';" onmouseout="FR.src='';"><img id="FR" src="" border=0" style="vertical-align:middle; margin-top:-2px;" /> Français</a>
+		<a href="#" class="Footer" onmouseover="ES.src='Es16.png';" onmouseout="ES.src='';"><img id="ES" src="" border=0" style="vertical-align:middle; margin-top:-2px;" /> Español</a>
+		<a href="#" class="Footer" onmouseover="CA.src='Ca16.png';" onmouseout="CA.src='';"><img id="CA" src="" border=0" style="vertical-align:middle; margin-top:-2px;" /> Català</a-->
+	</div>
+	</td>
 </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
+<tr>
+	<td align="center">
+	<div style="width:360px; margin-left:180px; padding:5px; background-color:#ffffff; border-radius:0px 0px 8px 8px;">
+	<p class="Title2" align="left" style="margin-left:20px; margin-top:-16px;">Create sheet music faster!</p>
+	<p class="Content" align="left">
+	<font class="Highlight" style="margin-left: 20px;">Powerful</font>&nbsp;&nbsp;&nbsp;designed to speed up tasks<br>
+	<font class="Highlight" style="margin-left: 20px;">Easy to use</font>&nbsp;&nbsp;&nbsp;one page User Guide<br>
+	<font class="Highlight" style="margin-left: 20px;">Fast</font>&nbsp;&nbsp;&nbsp;even on old and low-end computers<br>
+	<font class="Highlight" style="margin-left: 20px;">Robust</font>&nbsp;&nbsp;&nbsp;reliable and bug free*<br>
+	<font class="Content" style="font-size:5pt; margin-left:300px;">(*) hopefully</font>
+	</p>
+	</div>
+	<table width="1290" border="0" cellspacing="0" cellpadding="0" style="margin-top:-60px;">
+	<tr>
+	<td align="left">
+	<div style="width:320px; padding:5px; background-color:#ffffff; border-radius:8px 8px 8px 8px;">
+	<center>
+	<p class="Title" style="margin-top:10px;"><i>Free Evaluation</i></p>
+	<p class="Content">
+	<font class="Highlight">No expiration date</font><br>
+	<font class="Highlight">Fully-featured</font><br>
+	but for...<br>
+	<br>
+	Save is limited to up to 40 measures<br>
+	<br>
+	<a href="download/deluxe_note.msi" class="Link" onClick="gtag('event','Download',{'event_category':'Installer','event_label':'deluxe_note.msi'});">Download</a>
+	</p>
+	</div>
+	</center>
+	</td>
+	<td align="right">
+	<div style="width:320px; padding:5px; background-color:#ffffff; border-radius:8px 8px 8px 8px;">
+	<center>
+	<p class="Title" style="margin-top:10px;"><i>Early Adopter price</i></p>
+	<p class="Content">
+	<font class="Highlight">40% off</font><br>
+	<font class="Highlight">Free updates</font><br>
+	<font class="Highlight">Perpetual license</font><br>
+	<br>
+	Price will rise as new feaures are added<br>
+	<br>
+	<a href="mailto:deluxenote@besuau.com" class="Link" onClick="gtag('event','Email',{'event_category':'Buy','event_label':'Buy today'});">Buy today!</a>
+	</p>
+	</div>
+	</center>
+	</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td align="center">
+	<div style=" margin-top:-160px;">
+		<img src="Screenshot.png" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
+	</div>
+	</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="50%" align="right">
+	<div class="Feature" style="margin-right:50px;">
+	<p class="Title" align="center">ZOOM-DRIVEN NAVIGATION</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Mouse Wheel</font>&nbsp;&nbsp;&nbsp;Zoom in the notes you want to edit, just like you approach the paper when you handwrite music
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Zoom Extents</font>&nbsp;&nbsp;&nbsp;Zoom in a single measure, a system, a page, the whole workspace... in one click!
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Scrollers</font>&nbsp;&nbsp;&nbsp;Need to scroll? Use the wheels on the bottom-right corner to easily scroll in both directions
+	</p>
+	</div>
+	</td>
+	<td width="50%" align="left">
+	<img src="ZoomExtents.png" border=0"/>
+	</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#e7e7e7">
+<tr>
+	<td width="50%" align="right" valign="bottom">
+	<img src="Workspace.png" border=0" style="margin-top:10px;" />
+	</td>
+	<td width="50%" align="left">
+	<div class="Feature" style="margin-left:50px;">
+	<p class="Title" align="center">DESKTOP-LIKE WORKSPACE</p>
+	<p class="Content" align="left">
+	Spread sheet music on an unlimited workspace
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Paperless Scores</font>&nbsp;&nbsp;&nbsp;<br />Sketch your ideas out of the page layout
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Project Browser</font>&nbsp;&nbsp;&nbsp;<br />Easily access the spreaded scores and its parts
+	</p>
+	</div>
+	</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="50%" align="right">
+	<div class="Feature" style="margin-right:50px;">
+	<p class="Title" align="center" style="margin-left: 20px;">CONTEXT-SENSITIVE UI</p>
+	<p class="Content" align="left">
+	All the options you need, when you need them
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Properties</font>&nbsp;&nbsp;&nbsp;<br />Edit most of the aspects of the selected elements
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Context Palette</font>&nbsp;&nbsp;&nbsp;<br />Available actions for the current selection
+	</p>
+	</div>
+	</td>
+	<td width="50%" align="left" valign="bottom">
+	<img src="Context.png" border="0" style="margin-left:-50px;" />
+	</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#e7e7e7">
+<tr>
+	<td width="50%" align="right">
+	<img src="Scratch.png" border="0" style="margin-right:0px;" />
+	</td>
+	<td width="50%" align="left">
+	<div class="LargeFeature" style="margin-left:50px;">
+	<p class="Title" align="center" style="margin-left: 20px;">CREATING FROM SCRATCH MADE SIMPLE</p>
+	<p class="Content" align="left">
+	Get what you need in less the time it takes choosing a template
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Add Staves & Measures</font>&nbsp;&nbsp;&nbsp;and move them as easily as you add notes
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Group Parts</font>&nbsp;&nbsp;&nbsp;and ungroup them at any moment
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Change Instruments</font>&nbsp;&nbsp;&nbsp; in one click
+	</p>
+	</div>
+	</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="50%" align="right">
+	<div class="Feature" style="margin-right:50px;">
+	<p class="Title" align="center" style="margin-left: 20px;">ADVANCED EDITION</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Infinite Undo/Redo</font>&nbsp;&nbsp;&nbsp;<br />Return back and forward as many times as you need
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">2 Window Selection Modes</font>&nbsp;&nbsp;&nbsp;<br />Left-right selects any kind of element, right-left only notes
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Copy-Paste</font>&nbsp;&nbsp;&nbsp;notes and rests only or also the underlying staff
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Drag Elements</font>&nbsp;&nbsp;&nbsp;to change notes step, measures width, systems distance, credits position...
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Keyboard Shortcuts</font>&nbsp;&nbsp;&nbsp;<br />Lots of them to discover as you get familiar to Deluxe Note
+	</p>
+	</div>
+	</td>
+	<td width="50%" align="left">
+	<img src="Edit.png" border="0" style="margin-left:-50px;" />
+	</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
+<tr>
+	<td width="100%" align="center">
+	<div class="Feature">
+	<p class="Title" align="center" style="margin-left: 20px;">AND ALL YOU EXPECT IN MUSIC NOTATION SOFTWARE</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Virtual Piano</font>&nbsp;&nbsp;&nbsp;click on it to insert notes or just to play. You can also play it with your keyboard
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Score Player</font>&nbsp;&nbsp;&nbsp;listen Deluxe Note performing your sheet music, while you keep working!
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Print to PDF</font>&nbsp;&nbsp;&nbsp;or directly to printer
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Import MusicXML</font>&nbsp;&nbsp;&nbsp;from other programs
+	</p>
+	<p class="Content" align="left">
+	<font class="Highlight">Languages:</font>&nbsp;&nbsp;&nbsp;English, French, Spanish and Catalan
+	</p>
+	<p class="Content" align="center">
+	<br>Missing something? Look at the <a href="#" class="Link">Development Roadmap</a>
+	</p>
+	</div>
+	</td>
+</tr>
+</table>
+<table width="1024" border="0" cellspacing="20" cellpadding="0">
+<tr>
+	<td align="left" valign="bottom">
+	<font class="Footer">Copyright © 2020 Besuau S.L.U. All rights reserved</font>
+	</td>
+	<td align="right" valign="bottom">
+	<a href="privacy-policy.htm" class="Footer">Privacy and cookies</a>
+	<!--a href="#" class="Footer">Sales and refunds</a-->
+	<a href="legal.htm" class="Footer">Legal</a>
+	</td>
+</tr>
+</table>
+</center>
 </body>
 </html>
