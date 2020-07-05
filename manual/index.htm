@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34473101-4"></script>
@@ -10,15 +10,118 @@
   gtag('config', 'UA-34473101-4');
 </script>
 <link rel="shortcut icon" href="DeluxeNote.ico" />
-<title>Deluxe Note</title>
+<title>Deluxe Note · Magnifying Music Notation</title>
 <meta name"description" content="Music Notation Software for Windows">
 <meta name"keywords" content="music, notation, score, sheet music">
-<meta name="copyright" content="Besuau S.L." />
+<meta name="copyright" content="Besuau S.L.U." />
+<style>
+.Menu { color: #a0a0a0a; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
+a.Menu { color: #7F7F7F; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:12px; padding-bottom:12px; padding-left:16px; padding-right:16px; }
+a:hover.Menu { border-style:solid; border-width: 1px; border-color: #C45911; color: #C45911; font-weight:bold; background-color:#f7f7f7; border-radius: 6px; }
+.Title { color: #000000; font-size:22pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
+.TitleNumber { color: #C45911; font-size:25pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
+.Title2 { color: #C45911; font-size:16pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
+.Content { color: #666666; font-size:12pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; line-height:26px; }
+.ContentSmall { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; line-height:20px; }
+a.Link { color: #C45911; font-size:11pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; padding-top:8px; padding-bottom:8px; padding-left:9px; padding-right:9px; border-radius: 6px; }
+a:hover.Link { border-style:solid; border-width: 1px; border-color: #C45911; padding-left:8px; padding-right:8px; }
+a.Link2 { border-style:solid; border-width: 1px; border-color: #C45911; padding-left:8px; padding-right:8px; color: #C45911; font-size:11pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; padding-top:8px; padding-bottom:8px; padding-left:9px; padding-right:9px; border-radius: 6px; }
+a:hover.Link2 { background-color:#ffffff; }
+.Highlight { color: #444444; font-size:14pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; line-height: 26px; }
+.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
+a.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
+a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; border-radius: 6px; }
+</style>
 </head>
-<body style="background-color:#FFFFF;">
-<table width="100%" height="100%">
+<body style="background-color:#FFFFF; margin:0px;" >
+<center>
+<table width="1024" border="0" cellspacing="10" cellpadding="0">
 <tr>
-	<td align="center" valign="center"><img src="../DN.png" border=0" /></td>
+	<td align="left" valign="top"><a href="../"><img src="../DeluxeNoteLogo.png" border=0" /></a></td>
+	<td align="left" valign="bottom"><p class="Highlight">ONE PAGE USER GUIDE</p></td>
+	<td width="0%" align="right" valign="top">
+	<div style="margin-top:12px;" align="right" valign="top">
+		<font class="Footer"><img src="../En16.png" valign="center" border=0" style="vertical-align:middle; margin-top:-2px;" /> English</font>
+		<!--a href="#" class="Footer" onmouseover="FR.src='../Fr16.png';" onmouseout="FR.src='../Fr16BW.png';"><img id="FR" src="../Fr16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Fra</a>
+		<a href="#" class="Footer" onmouseover="ES.src='../Es16.png';" onmouseout="ES.src='../Es16BW.png';"><img id="ES" src="../Es16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Esp</a>
+		<a href="#" class="Footer" onmouseover="CA.src='../Ca16.png';" onmouseout="CA.src='../Ca16BW.png';"><img id="CA" src="../Ca16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Cat</a-->
+	</div>
+	</td>
 </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="40" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
+<tr>
+	<td align="center">
+	<div style="width:984px;" align="left">
+	<center><p class="Title">Main Window</p></center>
+	<img src="MainWindow.png" border="0">
+	<table width="100%" border="0" cellspacing="0" cellpadding="10" style="margin-top:10px"">
+	<tr><td width="50%" valign="top">
+	<p class="Content"><font class="Highlight">1. Dropdown menu</font> you'll rarely run functions from here. Take it as a reference to refer for all available functions</p>
+	<p class="Content"><font class="Highlight">2. Insert functions</font> use the toolbar's central area icons to insert new elements. Behavior may vary according to selection</p>
+	<p class="Content"><font class="Highlight">3. Properties</font> use this panel to change the properties of inserted elements after selecting them</p>
+	</td>
+	<td width="50%" align="left" valign="top">
+	<p class="Content"><font class="Highlight">4. Context palette</font> quick access to available functions for the selected elements. Useful to save time as well as to discover Deluxe Note features</p>
+	<p class="Content"><font class="Highlight">5. Project browser</font> shows the document's logic structure and let you select scores and parts to change its properties, instruments, etc.</p>
+	<p class="Content"><font class="Highlight">6. Status bar</font> shows real time information on keyboard and cursor position</p>
+	</p>
+	</td></tr>
+	</table>
+	</div>
+	</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="40">
+<tr>
+	<td align="center">
+	<div style="width:984px;" align="left">
+	<center><p class="Title">Workspace</p></center>
+	<p class="Content"><font class="Highlight">Selection</font></p>
+	<p class="Content">Click (left button) on an element to select it. Click on a blank area or press Esc to clear the selection</p>
+	<p class="Content"><font style="background-color:#FFF7A8;">Click on the staff header</font> (clef, key and time signatures) to select the whole staff</p>
+	<p class="Content">Click on an element and drag to move the selected elements</p>
+	<p class="Content">Click on a blank area and drag to start the window selection mode: left to right will select all kind of elements; right to left, notes only</p>
+	<img src="ZoomExtents.png" border="0" align="right" style="margin-left:20px;">
+	<p class="Content"><font class="Highlight">Zoom</font></p>
+	<p class="Content">Use the mouse wheel to zoom in and out</p>
+	<p class="Content"><font style="background-color:#FFF7A8;">Click the mouse wheel</font> to zoom extents. Depending on the clicked area you can zoom the extents of a measure, a system, a page...</p>
+	<p class="Content"><font class="Highlight">Pan</font></p>
+	<p class="Content">Right click and drag to pan the view</p>
+	<p class="Content">Hover over the <font style="background-color:#FFF7A8;">Virtual Wheels</font> at the bottom-right corner and use the mouse wheel to scroll</p>
+	</div>
+	</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="40" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
+<tr>
+	<td align="center">
+	<div style="width:984px;" align="left">
+	<center><p class="Title">Notes</p></center>
+	<img src="Notes.png" border="0">
+	<p class="Content">To insert notes, on the toolbar, select the note value, set the dot, rest and second voice options, and use any of the following methods:</p>
+	<ol class="Content">
+		<li>Use the mouse to <font style="background-color:#FFF7A8;">place the note on the desired position and step</font>. Click to confirm. Right click, press Esc or click on a blank area to cancel the insertion</li>
+		<li><font style="background-color:#FFF7A8;">Click on any piano key</font>. The corresponding note will be inserted at the current cursor position and the cursor will move forward. If cursor is undefined nothing will happen</li>
+		<li><font style="background-color:#FFF7A8;">Press any key from "Z" to "-"</font> positions in your keyboard. The corresponding note, based on the current keyboard octave, will be inserted as if you had clicked on the piano keyboard</li>
+		<li><font style="background-color:#FFF7A8;">Press Shift + Number</font> (1..9) to insert an interval for the selected notes</li>
+	</ul>
+	</div>
+	</td>
+</tr>
+</table>
+<table width="1024" border="0" cellspacing="20" cellpadding="0">
+<tr>
+	<td align="left" valign="bottom">
+	<font class="Footer">Copyright © 2020 Besuau S.L.U. All rights reserved</font>
+	</td>
+	<td align="right" valign="bottom">
+	<a href="../privacy-policy.htm" class="Footer">Privacy and cookies</a>
+	<!--a href="#" class="Footer">Sales and refunds</a-->
+	<a href="../legal.htm" class="Footer">Legal</a>
+	</td>
+</tr>
+</table>
+</center>
 </body>
 </html>
