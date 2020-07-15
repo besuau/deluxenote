@@ -11,8 +11,8 @@
 </script>
 <link rel="shortcut icon" href="DeluxeNote.ico" />
 <title>Deluxe Note · Magnifying Music Notation</title>
-<meta name"description" content="Music Notation Software for Windows">
-<meta name"keywords" content="music, notation, score, sheet music">
+<meta name"description" content="Music Notation Software for Windows. Deluxe Note is a scorewriter designed to let you write sheet music faster">
+<meta name"keywords" content="music, notation, score, sheet music, scorewriter, compose, arrange, program, musicxml">
 <meta name="copyright" content="Besuau S.L.U." />
 <style>
 .Menu { color: #a0a0a0a; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
@@ -22,8 +22,11 @@ a:hover.Menu { border-style:solid; border-width: 1px; border-color: #C45911; col
 .TitleNumber { color: #C45911; font-size:25pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
 .Title2 { color: #C45911; font-size:16pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
 .Content { color: #666666; font-size:12pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; line-height:26px; }
+.ContentSmall { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; line-height:20px; }
 a.Link { color: #C45911; font-size:11pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; padding-top:8px; padding-bottom:8px; padding-left:9px; padding-right:9px; border-radius: 6px; }
 a:hover.Link { border-style:solid; border-width: 1px; border-color: #C45911; padding-left:8px; padding-right:8px; }
+a.Link2 { border-style:solid; border-width: 1px; border-color: #C45911; padding-left:8px; padding-right:8px; color: #C45911; font-size:11pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; padding-top:8px; padding-bottom:8px; padding-left:9px; padding-right:9px; border-radius: 6px; }
+a:hover.Link2 { background-color:#ffffff; }
 .Highlight { color: #444444; font-size:14pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; line-height: 26px; }
 .Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
 a.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
@@ -34,15 +37,14 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 <center>
 <table width="1024" border="0" cellspacing="10" cellpadding="0">
 <tr>
-	<td align="left" valign="top"><a href="./"><img src="../DeluxeNoteLogo.png" border=0" /></a></td>
+	<td align="left" valign="top"><a href="../"><img src="../../DeluxeNoteLogo.png" border=0" /></a></td>
 	<td align="center" valign="top" class="Menu"></td>
 	<td width="0%" align="right" valign="top">
 	<div style="margin-top:12px;" align="right" valign="top">
-		<a href="../legal.htm" class="Footer" onmouseover="EN.src='../En16.png';" onmouseout="EN.src='../En16BW.png';"><img id="EN" src="../En16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> En</a>
-		<!--a href="#" class="Footer" onmouseover="FR.src='Fr16.png';" onmouseout="FR.src='Fr16BW.png';"><img id="FR" src="Fr16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Fra</a>
-		<a href="#" class="Footer" onmouseover="ES.src='Es16.png';" onmouseout="ES.src='Es16BW.png';"><img id="ES" src="Es16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Esp</a>
-		<a href="#" class="Footer" onmouseover="CA.src='Ca16.png';" onmouseout="CA.src='Ca16BW.png';"><img id="CA" src="../Ca16.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Cat</a-->
-		<font class="Footer"><img id="CA" src="../Ca16.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Català</font>
+		<a href="../../download" class="Footer" onmouseover="EN.src='../../En16.png';" onmouseout="EN.src='../../En16BW.png';"><img id="EN" src="../../En16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> En</a>
+		<a href="../../fr/download" class="Footer" onmouseover="FR.src='../../Fr16.png';" onmouseout="FR.src='../../Fr16BW.png';"><img id="FR" src="../../Fr16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Fr</a>
+		<font class="Footer"><img id="ES" src="../../Es16.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Español</font>
+		<a href="../../ca/download" class="Footer" onmouseover="CA.src='../../Ca16.png';" onmouseout="CA.src='../../Ca16BW.png';"><img id="CA" src="../../Ca16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Ca</a>
 	</div>
 	</td>
 </tr>
@@ -50,24 +52,27 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 <table width="100%" border="0" cellspacing="0" cellpadding="40" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
 <tr>
 	<td align="center">
-	<div style="width:984px; text-align:left;">
-	<center><p class="Title">Informació legal</p></center>
+	<div style="width:984px;" align="left">
+	<center><p class="Title">Descargar Deluxe Note para Windows</p></center>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="50%">
 	<p class="Content">
-	Deluxe Note és desenvolupat per, i pertany a:<br>
+	Versión actual: 1.0.0&nbsp;&nbsp;<a class="Link" href="#">Qué novedades hay</a><br>
 	<br>
-	<font class="Highlight">Besuau S.L.U.</font><br>
-	B67590398<br>
-	Ronda Sant Pere 48, 5-2<br>
-	08010 Barcelona<br>
-	Espanya<br>
+	Funciona en modo evaluación hasta que se activa la licencia. La evaluación no caduca, pero en modo evaluación solo podrás guardar archivos de hasta 40 compases.<br>
 	<br>
-	BESUAU S.L. amb número d'identificació fiscal B67590398 és una empresa catalana inscrita al Registre Mercantil de Barcelona, Secció General, Volum 47238, Foli 112, Fulla B-545697, Inscripció 1.<br>
-	<br>
-	<br>
-	<br>
-	"Deluxe Note" és una marca comercial de Besuau S.L.U.<br>
-	<br>
+	<font class="Highlight">Requisitos del sistema</font><br>
+	<ul class="Content">
+		<li>Windows 10 de 64 bits</li>
+	</ul>
 	</p>
+	</td>
+	<td width="50%" align="center" valign="center">
+	<a href="/download/deluxe_note.msi" class="Link2" onClick="gtag('event','Download Español',{'event_category':'Installer','event_label':'deluxe_note.msi'});">Descargar Deluxe Note</a>
+	<br><br>
+	<small class="ContentSmall">Tanto el instalador como los ejecutables que instala están firmados digitalmente para confirmar la autoría y garantizar que nadie los alteró.<br>Si SmartScreen muestra un aviso, puedes confiar e instalar igualmente. Este aviso desaparecerá a medida que ganemos reputación. ¡Somos demasiado nuevos!</small>
+	</td></tr>
+	</table>
 	</div>
 	</td>
 </tr>
@@ -75,12 +80,12 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 <table width="1024" border="0" cellspacing="20" cellpadding="0">
 <tr>
 	<td align="left" valign="bottom">
-	<font class="Footer">Copyright © 2020 Besuau S.L.U. Tots els drets reservats</font>
+	<font class="Footer">Copyright © 2020 Besuau S.L.U. Todos los derechos reservados</font>
 	</td>
 	<td align="right" valign="bottom">
-	<a href="privacy-policy.htm" class="Footer">Privacitat i galetes</a>
+	<a href="../privacy-policy.htm" class="Footer">Privacidad y galletas</a>
 	<!--a href="#" class="Footer">Sales and refunds</a-->
-	<a href="legal.htm" class="Footer">Legal</a>
+	<a href="../legal.htm" class="Footer">Legal</a>
 	</td>
 </tr>
 </table>
