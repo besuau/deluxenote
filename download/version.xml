@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<version file="deluxe_note.msi">
+<version file="deluxenote.msi">
 	<major>1</major>
 	<minor>0</minor>
-	<revision>0</revision>
-	<build>78</build>
+	<revision>1</revision>
+	<build>317</build>
 </version>
