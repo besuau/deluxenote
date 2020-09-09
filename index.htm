@@ -28,8 +28,65 @@ a:hover.Link { border-style:solid; border-width: 1px; border-color: #C45911; pad
 .Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
 a.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
 a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; border-radius: 6px; }
-.Feature { width:500px; padding:5px; margin-top:20; margin-bottom:40; }
-.LargeFeature { width:580px; padding:5px; margin-top:20; margin-bottom:40; }
+.FeatureContainer
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+table.Promos
+{
+	width: 90%;
+}
+.Feature
+{
+	display:inline; width:528px; padding-top:20px; padding-bottom:40px; padding-right:16px; margin:0px;
+}
+.FeatureImage
+{
+	display:inline; width:480px;
+}
+.FeatureImageLeft
+{
+	display:inline; width:600px;
+}
+.FeaturePresentation
+{
+	display:inline; width:1024px; padding-top:10px; padding-bottom:10px; padding-right:0px; margin:0px;
+}
+.HighlightsContainer
+{
+	width:360px; margin-left:180px; padding:5px; background-color:#ffffff; border-radius:0px 0px 8px 8px;
+}
+.ScreenshotContainer
+{
+	margin-top:-160px;
+}
+@media only screen and (max-width: 1024px)
+{
+	.FeatureContainer
+	{
+		display: block;
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+	.HighlightsContainer
+	{
+		display: none;
+	}
+}
+@media only screen and (max-width: 1400px)
+{
+	.Promos
+	{
+		display: none;
+	}
+	.ScreenshotContainer
+	{
+		margin-top:0px;
+	}
+}
 </style>
 </head>
 <body style="background-color:#FFFFF; margin:0px;" >
@@ -67,7 +124,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
 <tr>
 	<td align="center">
-	<div style="width:360px; margin-left:180px; padding:5px; background-color:#ffffff; border-radius:0px 0px 8px 8px;">
+	<div class="HighlightsContainer">
 	<p class="Title2" align="left" style="margin-left:20px; margin-top:-16px;">Create sheet music faster!</p>
 	<p class="Content" align="left">
 	<font class="Highlight" style="margin-left: 20px;">Powerful</font>&nbsp;&nbsp;&nbsp;designed to speed up tasks<br>
@@ -77,7 +134,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 	<font class="Content" style="font-size:5pt; margin-left:300px;">(*) hopefully</font>
 	</p>
 	</div>
-	<table width="1290" border="0" cellspacing="0" cellpadding="0" style="margin-top:-60px;">
+	<table border="0" cellspacing="0" cellpadding="0" class="Promos" style="margin-top:-60px;">
 	<tr>
 	<td align="left">
 	<div style="width:320px; padding:5px; background-color:#ffffff; border-radius:8px 8px 8px 8px;">
@@ -117,153 +174,135 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 </tr>
 <tr>
 	<td align="center">
-	<div style=" margin-top:-160px;">
-		<img src="Screenshot.png" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
+	<div class="ScreenshotContainer">
+		<img id="Screenshot" src="Screenshot0.png" width="640" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
 	</div>
 	</td>
 </tr>
 </table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-	<td width="50%" align="right">
-	<div class="Feature" style="margin-right:50px;">
-	<p class="Title" align="left">ZOOM-DRIVEN WORKFLOW</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Mouse Wheel</font>&nbsp;&nbsp;&nbsp;Zoom in the notes you want to edit, just like you approach the paper when you handwrite music
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Zoom Extents</font>&nbsp;&nbsp;&nbsp;Zoom in a single measure, a system, a page, the whole workspace... in one click!
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Scrollers</font>&nbsp;&nbsp;&nbsp;Need to scroll? Use the wheels on the bottom-right corner to easily scroll in both directions
-	</p>
+<div class="FeatureContainer" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
+	<div class="FeaturePresentation">
+	<p class="Highlight">
+	Enjoy creating sheet music in a very natural way with this music notation software -scorewriter- for Windows. Feel its innovative user experience to painlessly benefit from computer-aided notation</p>
 	</div>
-	</td>
-	<td width="50%" align="left">
-	<img src="ZoomExtents.png" border=0"/>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#e7e7e7">
-<tr>
-	<td width="50%" align="right" valign="bottom">
-	<img src="Workspace.png" border=0" style="margin-top:10px;" />
-	</td>
-	<td width="50%" align="left">
-	<div class="Feature" style="margin-left:50px;">
-	<p class="Title" align="left">DESKTOP-LIKE WORKSPACE</p>
-	<p class="Content" align="left">
-	Spread sheet music on an unlimited workspace
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Paperless Scores</font>&nbsp;&nbsp;&nbsp;<br />Sketch your ideas out of the page layout
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Project Browser</font>&nbsp;&nbsp;&nbsp;<br />Easily access the spreaded scores and its parts
-	</p>
-	</div>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-	<td width="50%" align="right">
-	<div class="Feature" style="margin-right:50px;">
-	<p class="Title" align="left">CONTEXT-SENSITIVE UI</p>
-	<p class="Content" align="left">
-	All the options you need, when you need them
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Properties</font>&nbsp;&nbsp;&nbsp;<br />Edit most of the aspects of the selected elements
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Context Palette</font>&nbsp;&nbsp;&nbsp;<br />Available actions for the current selection
-	</p>
-	</div>
-	</td>
-	<td width="50%" align="left" valign="bottom">
-	<img src="Context.png" border="0" style="margin-left:-50px;" />
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#e7e7e7">
-<tr>
-	<td width="50%" align="right">
-	<img src="Scratch.png" border="0" style="margin-right:0px;" />
-	</td>
-	<td width="50%" align="left">
-	<div class="LargeFeature" style="margin-left:50px;">
-	<p class="Title" align="left">CREATING FROM SCRATCH MADE SIMPLE</p>
-	<p class="Content" align="left">
-	Get what you need in less the time it takes choosing a template
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Add Staves & Measures</font>&nbsp;&nbsp;&nbsp;and move them as easily as you add notes
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Group Parts</font>&nbsp;&nbsp;&nbsp;and ungroup them at any moment
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Change Instruments</font>&nbsp;&nbsp;&nbsp; in one click
-	</p>
-	</div>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-	<td width="50%" align="right">
-	<div class="Feature" style="margin-right:50px;">
-	<p class="Title" align="left">ADVANCED EDITION</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Infinite Undo/Redo</font>&nbsp;&nbsp;&nbsp;<br />Return back and forward as many times as you need
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">2 Window Selection Modes</font>&nbsp;&nbsp;&nbsp;<br />Left-right selects any kind of element, right-left only notes
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Copy-Paste</font>&nbsp;&nbsp;&nbsp;notes and rests only or also the underlying staff
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Drag Elements</font>&nbsp;&nbsp;&nbsp;to change notes step, measures width, systems distance, credits position...
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Keyboard Shortcuts</font>&nbsp;&nbsp;&nbsp;<br />Lots of them to discover as you get familiar to DeluxeNote
-	</p>
-	</div>
-	</td>
-	<td width="50%" align="left">
-	<img src="Edit.png" border="0" style="margin-left:-50px;" />
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
-<tr>
-	<td width="100%" align="center">
+</div>
+<div class="FeatureContainer">
 	<div class="Feature">
-	<p class="Title" align="center">AND ALL YOU EXPECT IN MUSIC NOTATION SOFTWARE</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Virtual Piano</font>&nbsp;&nbsp;&nbsp;click on it to insert notes or just to play. You can also play it with your keyboard
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Score Player</font>&nbsp;&nbsp;&nbsp;listen DeluxeNote performing your sheet music, while you keep working on it!
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Print to PDF</font>&nbsp;&nbsp;&nbsp;or directly to printer
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Import MusicXML</font>&nbsp;&nbsp;&nbsp;from other programs
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Languages:</font>&nbsp;&nbsp;&nbsp;English, French, Spanish and Catalan
-	</p>
-	<p class="Content" align="center">
-	<br>Missing something? Look at the <a href="roadmap.htm" class="Link">Development Roadmap</a>
-	</p>
+		<p class="Title" align="left">ZOOM-DRIVEN WORKFLOW</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Mouse Wheel</font>&nbsp;&nbsp;&nbsp;Zoom in the notes you want to edit, just like you approach the paper when you handwrite music
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Zoom Extents</font>&nbsp;&nbsp;&nbsp;Zoom in a single measure, a system, a page, the whole workspace... in one click!
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Scrollers</font>&nbsp;&nbsp;&nbsp;Need to scroll? Use the wheels on the bottom-right corner to easily scroll in both directions
+		</p>
 	</div>
-	</td>
-</tr>
-</table>
+	<div class="FeatureImage">
+		<img src="ZoomExtents.png" border=0"/>
+	</div>
+</div>
+<div class="FeatureContainer" style="background-color:#e7e7e7;">
+	<div class="FeatureImageLeft">
+		<img src="Workspace.png" border=0" />
+	</div>
+	<div class="Feature">
+		<p class="Title" align="left">DESKTOP-LIKE WORKSPACE</p>
+		<p class="Content" align="left">
+		Spread sheet music on an unlimited workspace
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Paperless Scores</font>&nbsp;&nbsp;&nbsp;<br />Sketch your ideas out of the page layout
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Project Browser</font>&nbsp;&nbsp;&nbsp;<br />Easily access the spreaded scores and its parts
+		</p>
+	</div>
+</div>
+<div class="FeatureContainer">
+	<div class="Feature">
+		<p class="Title" align="left">CONTEXT-SENSITIVE UI</p>
+		<p class="Content" align="left">
+		All the options you need, when you need them
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Properties</font>&nbsp;&nbsp;&nbsp;<br />Edit most of the aspects of the selected elements
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Context Palette</font>&nbsp;&nbsp;&nbsp;<br />Available actions for the current selection
+		</p>
+	</div>
+	<div class="FeatureImage">
+		<img src="Context.png" border="0">
+	</div>
+</div>
+<div class="FeatureContainer" style="background-color:#e7e7e7;">
+	<div class="FeatureImageLeft">
+		<img src="Scratch.png" border="0" />
+	</div>
+	<div class="Feature">
+		<p class="Title" align="left">CREATING FROM SCRATCH MADE SIMPLE</p>
+		<p class="Content" align="left">
+		Get what you need in less the time it takes choosing a template
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Add Staves & Measures</font>&nbsp;&nbsp;&nbsp;as easily as you add notes
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Group Parts</font>&nbsp;&nbsp;&nbsp;and ungroup them at any moment
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Change Instruments</font>&nbsp;&nbsp;&nbsp; in one click
+		</p>
+	</div>
+</div>
+<div class="FeatureContainer">
+	<div class="Feature">
+		<p class="Title" align="left">ADVANCED EDITION</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Infinite Undo/Redo</font>&nbsp;&nbsp;&nbsp;<br />Return back and forward as many times as you need
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">2 Window Selection Modes</font>&nbsp;&nbsp;&nbsp;<br />Left-right selects any kind of element, right-left only notes
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Copy-Paste</font>&nbsp;&nbsp;&nbsp;notes and rests only or also the underlying staff
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Drag Elements</font>&nbsp;&nbsp;&nbsp;to change notes step, measures width, systems distance, credits position...
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Keyboard Shortcuts</font>&nbsp;&nbsp;&nbsp;<br />Lots of them to discover as you get familiar to DeluxeNote
+		</p>
+	</div>
+	<div class="FeatureImage">
+		<img src="Edit.png" border="0" />
+	</div>
+</div>
+<div class="FeatureContainer" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
+	<div class="Feature">
+		<p class="Title" align="center">AND ALL YOU EXPECT IN MUSIC NOTATION SOFTWARE</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Virtual Piano</font>&nbsp;&nbsp;&nbsp;click on it to insert notes or just to play. You can also play it with your keyboard
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Score Player</font>&nbsp;&nbsp;&nbsp;listen DeluxeNote performing your sheet music, while you keep working on it!
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Print to PDF</font>&nbsp;&nbsp;&nbsp;or directly to printer
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Import MusicXML</font>&nbsp;&nbsp;&nbsp;from other programs
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Languages:</font>&nbsp;&nbsp;&nbsp;English, French, Spanish and Catalan
+		</p>
+		<p class="Content" align="center">
+		<br>Missing something? Look at the <a href="roadmap.htm" class="Link">Development Roadmap</a>
+		</p>
+	</div>
+</div>
 <table width="1024" border="0" cellspacing="20" cellpadding="0">
 <tr>
 	<td align="left" valign="bottom">
@@ -276,5 +315,15 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 </tr>
 </table>
 </center>
+<script>
+window.setInterval(changeScreenshot,2000);
+var currentPNG=0;
+function changeScreenshot()
+{
+	if (currentPNG<4) currentPNG++;
+	else currentPNG=0;
+	document.getElementById("Screenshot").src="Screenshot"+currentPNG+".png";
+}
+</script>
 </body>
 </html>

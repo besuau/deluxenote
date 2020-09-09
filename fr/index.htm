@@ -28,8 +28,65 @@ a:hover.Link { border-style:solid; border-width: 1px; border-color: #C45911; pad
 .Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
 a.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
 a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; border-radius: 6px; }
-.Feature { width:500px; padding:5px; margin-top:20; margin-bottom:40; }
-.LargeFeature { width:580px; padding:5px; margin-top:20; margin-bottom:40; }
+.FeatureContainer
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+table.Promos
+{
+	width: 90%;
+}
+.Feature
+{
+	display:inline; width:528px; padding-top:20px; padding-bottom:40px; padding-right:16px; margin:0px;
+}
+.FeatureImage
+{
+	display:inline; width:480px;
+}
+.FeatureImageLeft
+{
+	display:inline; width:600px;
+}
+.FeaturePresentation
+{
+	display:inline; width:1024px; padding-top:10px; padding-bottom:10px; padding-right:0px; margin:0px;
+}
+.HighlightsContainer
+{
+	width:360px; margin-left:180px; padding:5px; background-color:#ffffff; border-radius:0px 0px 8px 8px;
+}
+.ScreenshotContainer
+{
+	margin-top:-160px;
+}
+@media only screen and (max-width: 1024px)
+{
+	.FeatureContainer
+	{
+		display: block;
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+	.HighlightsContainer
+	{
+		display: none;
+	}
+}
+@media only screen and (max-width: 1400px)
+{
+	.Promos
+	{
+		display: none;
+	}
+	.ScreenshotContainer
+	{
+		margin-top:0px;
+	}
+}
 </style>
 </head>
 <body style="background-color:#FFFFF; margin:0px;" >
@@ -67,7 +124,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
 <tr>
 	<td align="center">
-	<div style="width:360px; margin-left:180px; padding:5px; background-color:#ffffff; border-radius:0px 0px 8px 8px;">
+	<div class="HighlightsContainer">
 	<p class="Title2" align="left" style="margin-left:20px; margin-top:-16px;">Créez des partitions vite !</p>
 	<p class="Content" align="left">
 	<font class="Highlight" style="margin-left: 20px;">Puissant</font>&nbsp;&nbsp;&nbsp;fait pour économiser le travail<br>
@@ -77,7 +134,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 	<font class="Content" style="font-size:5pt; margin-left:300px;">(*) on l'espère</font>
 	</p>
 	</div>
-	<table width="1290" border="0" cellspacing="0" cellpadding="0" style="margin-top:-60px;">
+	<table border="0" cellspacing="0" cellpadding="0" class="Promos" style="margin-top:-60px;">
 	<tr>
 	<td align="left">
 	<div style="width:320px; padding:5px; background-color:#ffffff; border-radius:8px 8px 8px 8px;">
@@ -117,153 +174,135 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 </tr>
 <tr>
 	<td align="center">
-	<div style=" margin-top:-160px;">
-		<img src="../Screenshot.png" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
+	<div class="ScreenshotContainer">
+		<img id="Screenshot" src="../Screenshot0.png" width="640" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
 	</div>
 	</td>
 </tr>
 </table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-	<td width="50%" align="right">
-	<div class="Feature" style="margin-right:50px;">
-	<p class="Title" align="left">LE ZOOM COMME OUTIL CLÉ</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Molette de la souris</font>&nbsp;&nbsp;&nbsp;Zoomez les notes tout comme vous vous approchez du papier lorsque vous écrivez la musique à la main
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Zoom de l'extension</font>&nbsp;&nbsp;&nbsp;d'une mesure spécifique, d'un système, d'une page, de tout l'espace de travail... en un seul clic!
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Molettes virtuelles</font>&nbsp;&nbsp;&nbsp;Avez-vous besoin de faire défiler? Utilisez les molettes du coin pour faire défiler dans les deux directions
-	</p>
+<div class="FeatureContainer" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
+	<div class="FeaturePresentation">
+	<p class="Highlight">
+	Jouissez en créant des partitions de manière très naturelle avec ce logiciel de notation musicale sur Windows. Sentez son expérience utilisateur innovante pour profiter sans douleur de la notation assistée par ordinateur</p>
 	</div>
-	</td>
-	<td width="50%" align="left">
-	<img src="../ZoomExtents.png" border=0"/>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#e7e7e7">
-<tr>
-	<td width="50%" align="right" valign="bottom">
-	<img src="../Workspace.png" border=0" style="margin-top:10px;" />
-	</td>
-	<td width="50%" align="left">
-	<div class="Feature" style="margin-left:50px;">
-	<p class="Title" align="left">ESPACE DE TRAVAIL DE TYPE BUREAU</p>
-	<p class="Content" align="left">
-	Étalez la musique sur un espace de travail illimité
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Partitions sans papier</font>&nbsp;&nbsp;&nbsp;<br />Ébauchez vos idées au-delà des limites du papier
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Arborescence du projet</font>&nbsp;&nbsp;&nbsp;<br />Accédez facilement aux partitions étalées et à ses parties
-	</p>
-	</div>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-	<td width="50%" align="right">
-	<div class="Feature" style="margin-right:50px;">
-	<p class="Title" align="left">UI SENSIBLE AU CONTEXTE</p>
-	<p class="Content" align="left">
-	Toutes les options qu'il vous faut, quand vous en avez besoin
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Propriétés</font>&nbsp;&nbsp;&nbsp;<br />Modifiez la plupart des aspects des éléments sélectionnés
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Palette contextuelle</font>&nbsp;&nbsp;&nbsp;<br />Actions disponibles pour la sélection actuelle
-	</p>
-	</div>
-	</td>
-	<td width="50%" align="left" valign="bottom">
-	<img src="../Context.png" border="0" style="margin-left:-32px;" />
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#e7e7e7">
-<tr>
-	<td width="50%" align="right">
-	<img src="../Scratch.png" border="0" style="margin-right:0px;" />
-	</td>
-	<td width="50%" align="left">
-	<div class="LargeFeature" style="margin-left:50px;">
-	<p class="Title" align="left">CRÉATION À PARTIR DE ZÉRO SIMPLE</p>
-	<p class="Content" align="left">
-	Créez la base en moins de temps qu'il n'en faut pour choisir un modèle
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Ajoutez des portées et des mesures</font>&nbsp;&nbsp;&nbsp;aussi vite qu'avec les notes
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Groupez des parties</font>&nbsp;&nbsp;&nbsp;et dissociez-les à tout moment
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Changez les instruments</font>&nbsp;&nbsp;&nbsp; en un seul clic
-	</p>
-	</div>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-	<td width="50%" align="right">
-	<div class="Feature" style="margin-right:50px;">
-	<p class="Title" align="left">ÉDITION AVANCÉE</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Annuler/rétablir infini</font>&nbsp;&nbsp;&nbsp;<br />N'ayez pas peur de tout modifier, vous pouvez toujours reculer
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">2 modes de sélection par fenêtre</font>&nbsp;&nbsp;&nbsp;<br />À droite vous sélectionnez tout, à gauche uniquement les notes
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Copiez-collez</font>&nbsp;&nbsp;&nbsp;les notes seules ou avec la portée sous-jacente
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Faites glisser les éléments</font>&nbsp;&nbsp;&nbsp;pour modifier l'hauteur d'une note, la largeur d'une mesure, la séparation entre les portées...
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Raccourcis clavier</font>&nbsp;&nbsp;&nbsp;<br />Il y en a plein à decouvrir au fur et à mesure que vous familiarisiez
-	</p>
-	</div>
-	</td>
-	<td width="50%" align="left">
-	<img src="../Edit.png" border="0" style="margin-left:-50px;" />
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
-<tr>
-	<td width="100%" align="center">
+</div>
+<div class="FeatureContainer">
 	<div class="Feature">
-	<p class="Title" align="center">ET TOUT CE QU'ON ATTEND D'UN LOGICIEL DE NOTATION MUSICALE</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Piano virtuel</font>&nbsp;&nbsp;&nbsp;cliquez dessus pour insérer des notes ou pour jouer. Vous pouvez également y jouer en appuyant sur les touches
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Joueur de la partition</font>&nbsp;&nbsp;&nbsp;écoutez DeluxeNote interpréter vos partitions, tout en continuant à y travailler !
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Impression PDF</font>&nbsp;&nbsp;&nbsp;ou directement à l'imprimante
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Importation MusicXML</font>&nbsp;&nbsp;&nbsp;d'autres programmes
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Langues:</font>&nbsp;&nbsp;&nbsp;Anglais, Français, Espagnol et Catalan
-	</p>
-	<p class="Content" align="center">
-	<br>Il vous manque quelque chose? Regardez la <a href="../roadmap.htm" class="Link">Feuille de route</a>
-	</p>
+		<p class="Title" align="left">LE ZOOM COMME OUTIL CLÉ</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Molette de la souris</font>&nbsp;&nbsp;&nbsp;Zoomez les notes tout comme vous vous approchez du papier lorsque vous écrivez la musique à la main
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Zoom de l'extension</font>&nbsp;&nbsp;&nbsp;d'une mesure spécifique, d'un système, d'une page, de tout l'espace de travail... en un seul clic!
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Molettes virtuelles</font>&nbsp;&nbsp;&nbsp;Avez-vous besoin de faire défiler? Utilisez les molettes du coin pour faire défiler dans les deux directions
+		</p>
 	</div>
-	</td>
-</tr>
-</table>
+	<div class="FeatureImage">
+		<img src="../ZoomExtents.png" border=0"/>
+	</div>
+</div>
+<div class="FeatureContainer" style="background-color:#e7e7e7;">
+	<div class="FeatureImageLeft">
+		<img src="../Workspace.png" border=0" />
+	</div>
+	<div class="Feature">
+		<p class="Title" align="left">ESPACE DE TRAVAIL DE TYPE BUREAU</p>
+		<p class="Content" align="left">
+		Étalez la musique sur un espace de travail illimité
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Partitions sans papier</font>&nbsp;&nbsp;&nbsp;<br />Ébauchez vos idées au-delà des limites du papier
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Arborescence du projet</font>&nbsp;&nbsp;&nbsp;<br />Accédez facilement aux partitions étalées et à ses parties
+		</p>
+	</div>
+</div>
+<div class="FeatureContainer">
+	<div class="Feature">
+		<p class="Title" align="left">UI SENSIBLE AU CONTEXTE</p>
+		<p class="Content" align="left">
+		Toutes les options qu'il vous faut, quand vous en avez besoin
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Propriétés</font>&nbsp;&nbsp;&nbsp;<br />Modifiez la plupart des aspects des éléments sélectionnés
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Palette contextuelle</font>&nbsp;&nbsp;&nbsp;<br />Actions disponibles pour la sélection actuelle
+		</p>
+	</div>
+	<div class="FeatureImage">
+		<img src="../Context.png" border="0">
+	</div>
+</div>
+<div class="FeatureContainer" style="background-color:#e7e7e7;">
+	<div class="FeatureImageLeft">
+		<img src="../Scratch.png" border="0" />
+	</div>
+	<div class="Feature">
+		<p class="Title" align="left">CRÉATION À PARTIR DE ZÉRO SIMPLE</p>
+		<p class="Content" align="left">
+		Créez la base en moins de temps qu'il n'en faut pour choisir un modèle
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Ajoutez des portées/mesures</font>&nbsp;&nbsp;&nbsp;aussi vite qu'avec les notes
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Groupez des parties</font>&nbsp;&nbsp;&nbsp;et dissociez-les à tout moment
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Changez les instruments</font>&nbsp;&nbsp;&nbsp; en un seul clic
+		</p>
+	</div>
+</div>
+<div class="FeatureContainer">
+	<div class="Feature">
+		<p class="Title" align="left">ÉDITION AVANCÉE</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Annuler/rétablir infini</font>&nbsp;&nbsp;&nbsp;<br />N'ayez pas peur de tout modifier, vous pouvez toujours reculer
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">2 modes de sélection par fenêtre</font>&nbsp;&nbsp;&nbsp;<br />À droite vous sélectionnez tout, à gauche uniquement les notes
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Copiez-collez</font>&nbsp;&nbsp;&nbsp;les notes seules ou avec la portée sous-jacente
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Faites glisser les éléments</font>&nbsp;&nbsp;&nbsp;pour modifier l'hauteur d'une note, la largeur d'une mesure, la séparation entre les portées...
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Raccourcis clavier</font>&nbsp;&nbsp;&nbsp;<br />Il y en a plein à decouvrir au fur et à mesure que vous familiarisiez
+		</p>
+	</div>
+	<div class="FeatureImage">
+		<img src="../Edit.png" border="0" />
+	</div>
+</div>
+<div class="FeatureContainer" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
+	<div class="Feature">
+		<p class="Title" align="center">ET TOUT CE QU'ON ATTEND D'UN LOGICIEL DE NOTATION MUSICALE</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Piano virtuel</font>&nbsp;&nbsp;&nbsp;cliquez dessus pour insérer des notes ou pour jouer. Vous pouvez également y jouer en appuyant sur les touches
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Joueur de la partition</font>&nbsp;&nbsp;&nbsp;écoutez DeluxeNote interpréter vos partitions, tout en continuant à y travailler !
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Impression PDF</font>&nbsp;&nbsp;&nbsp;ou directement à l'imprimante
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Importation MusicXML</font>&nbsp;&nbsp;&nbsp;d'autres programmes
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Langues:</font>&nbsp;&nbsp;&nbsp;Anglais, Français, Espagnol et Catalan
+		</p>
+		<p class="Content" align="center">
+		<br>Il vous manque quelque chose? Regardez la <a href="../roadmap.htm" class="Link">Feuille de route</a>
+		</p>
+	</div>
+</div>
 <table width="1024" border="0" cellspacing="20" cellpadding="0">
 <tr>
 	<td align="left" valign="bottom">
@@ -276,5 +315,15 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 </tr>
 </table>
 </center>
+<script>
+window.setInterval(changeScreenshot,2000);
+var currentPNG=0;
+function changeScreenshot()
+{
+	if (currentPNG<4) currentPNG++;
+	else currentPNG=0;
+	document.getElementById("Screenshot").src="../Screenshot"+currentPNG+".png";
+}
+</script>
 </body>
 </html>

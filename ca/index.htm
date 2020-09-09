@@ -28,8 +28,65 @@ a:hover.Link { border-style:solid; border-width: 1px; border-color: #C45911; pad
 .Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
 a.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
 a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; border-radius: 6px; }
-.Feature { width:500px; padding:5px; margin-top:20; margin-bottom:40; }
-.LargeFeature { width:580px; padding:5px; margin-top:20; margin-bottom:40; }
+.FeatureContainer
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+table.Promos
+{
+	width: 90%;
+}
+.Feature
+{
+	display:inline; width:528px; padding-top:20px; padding-bottom:40px; padding-right:16px; margin:0px;
+}
+.FeatureImage
+{
+	display:inline; width:480px;
+}
+.FeatureImageLeft
+{
+	display:inline; width:600px;
+}
+.FeaturePresentation
+{
+	display:inline; width:1024px; padding-top:10px; padding-bottom:10px; padding-right:0px; margin:0px;
+}
+.HighlightsContainer
+{
+	width:360px; margin-left:180px; padding:5px; background-color:#ffffff; border-radius:0px 0px 8px 8px;
+}
+.ScreenshotContainer
+{
+	margin-top:-160px;
+}
+@media only screen and (max-width: 1024px)
+{
+	.FeatureContainer
+	{
+		display: block;
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+	.HighlightsContainer
+	{
+		display: none;
+	}
+}
+@media only screen and (max-width: 1400px)
+{
+	.Promos
+	{
+		display: none;
+	}
+	.ScreenshotContainer
+	{
+		margin-top:0px;
+	}
+}
 </style>
 </head>
 <body style="background-color:#FFFFF; margin:0px;" >
@@ -67,7 +124,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
 <tr>
 	<td align="center">
-	<div style="width:360px; margin-left:180px; padding:5px; background-color:#ffffff; border-radius:0px 0px 8px 8px;">
+	<div class="HighlightsContainer">
 	<p class="Title2" align="left" style="margin-left:20px; margin-top:-16px;">Crea partitures fàcilment!</p>
 	<p class="Content" align="left">
 	<font class="Highlight" style="margin-left: 20px;">Potent</font>&nbsp;&nbsp;&nbsp;dissenyat per estalviar feina<br>
@@ -77,7 +134,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 	<font class="Content" style="font-size:5pt; margin-left:300px;">(*) esperem</font>
 	</p>
 	</div>
-	<table width="1290" border="0" cellspacing="0" cellpadding="0" style="margin-top:-60px;">
+	<table border="0" cellspacing="0" cellpadding="0" class="Promos" style="margin-top:-60px;">
 	<tr>
 	<td align="left">
 	<div style="width:320px; padding:5px; background-color:#ffffff; border-radius:8px 8px 8px 8px;">
@@ -117,153 +174,135 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 </tr>
 <tr>
 	<td align="center">
-	<div style=" margin-top:-160px;">
-		<img src="../Screenshot.png" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
+	<div class="ScreenshotContainer">
+		<img id="Screenshot" src="../Screenshot0.png" width="640" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
 	</div>
 	</td>
 </tr>
 </table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-	<td width="50%" align="right">
-	<div class="Feature" style="margin-right:50px;">
-	<p class="Title" align="left">EL ZOOM COM A EÏNA CLAU</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Roda del ratolí</font>&nbsp;&nbsp;&nbsp;Utilitza-la per apropar les notes, de la mateixa manera que t'acostes al paper quan escrius música a mà
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Zoom de l'extensió</font>&nbsp;&nbsp;&nbsp;d'un compàs concret, d'un sistema, d'una pàgina, de tot l'espai de treball... en un sol clic!
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Desplaçadors</font>&nbsp;&nbsp;&nbsp;Et cal desplaçar-te? Fes servir les rodes de la cantonada per desplaçar-te fàcilment en ambdues direccions
-	</p>
+<div class="FeatureContainer" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
+	<div class="FeaturePresentation">
+	<p class="Highlight">
+	Gaudeix de l'edició de partitures amb aquest programari de notació musical per Windows. Sent la seva innovadora experiència d'usuari per beneficiar-te de la notació assistida per ordinador sense barallar-t'hi</p>
 	</div>
-	</td>
-	<td width="50%" align="left">
-	<img src="../ZoomExtents.png" border=0"/>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#e7e7e7">
-<tr>
-	<td width="50%" align="right" valign="bottom">
-	<img src="../Workspace.png" border=0" style="margin-top:10px;" />
-	</td>
-	<td width="50%" align="left">
-	<div class="Feature" style="margin-left:50px;">
-	<p class="Title" align="left">ESPAI DE TREBALL TIPUS ESCRIPTORI</p>
-	<p class="Content" align="left">
-	Escampa la música per un espai de treball il·limitat
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Partitures sense paper</font>&nbsp;&nbsp;&nbsp;<br />Esbossa les teves idees fora dels límits del paper
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Arbre del projecte</font>&nbsp;&nbsp;&nbsp;<br />Accedeix fàcilment a les partitures i les seves particel·les
-	</p>
-	</div>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-	<td width="50%" align="right">
-	<div class="Feature" style="margin-right:50px;">
-	<p class="Title" align="left">INTERFÍCIE ADAPTADA AL CONTEXT</p>
-	<p class="Content" align="left">
-	Totes les opcions que necessites, quan et calen
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Propietats</font>&nbsp;&nbsp;&nbsp;<br />Edita la majoria d'aspectes dels elements seleccionats
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Paleta contextual</font>&nbsp;&nbsp;&nbsp;<br />Accions disponibles per a la selecció actual
-	</p>
-	</div>
-	</td>
-	<td width="50%" align="left" valign="bottom">
-	<img src="../Context.png" border="0" style="margin-left:-32px;" />
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#e7e7e7">
-<tr>
-	<td width="50%" align="right">
-	<img src="../Scratch.png" border="0" style="margin-right:0px;" />
-	</td>
-	<td width="50%" align="left">
-	<div class="LargeFeature" style="margin-left:50px;">
-	<p class="Title" align="left">CREACIÓ DES DE ZERO SENZILLA</p>
-	<p class="Content" align="left">
-	Aconsegueix el que vols més depressa del que trigaries a escollir una plantilla
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Afageix pentagrames i compassos</font>&nbsp;&nbsp;&nbsp;tan fàcilment com amb les notes
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Agrupa particel·les</font>&nbsp;&nbsp;&nbsp;i desagrupa-les en qualsevol moment
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Canvia els instruments</font>&nbsp;&nbsp;&nbsp; en un sol clic
-	</p>
-	</div>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-	<td width="50%" align="right">
-	<div class="Feature" style="margin-right:50px;">
-	<p class="Title" align="left">EDICIÓ AVANÇADA</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Desfer/refer infinits</font>&nbsp;&nbsp;&nbsp;<br />No et faci por fer canvis, pots tirar enrera tants cops com calgui
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">2 modes de selecció per finestra</font>&nbsp;&nbsp;&nbsp;<br />Cap a la dreta ho selecciones tot, cap a l'esquerra només notes
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Copia i enganxa</font>&nbsp;&nbsp;&nbsp;sols notes o també el pentagrama subjacent
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Arrossega elements</font>&nbsp;&nbsp;&nbsp;per canviar l'altura d'una nota, l'amplada d'un compàs, la distància entre pentagrames...
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Dreceres de teclat</font>&nbsp;&nbsp;&nbsp;<br />N'hi ha un munt per descobrir a mesura que t'hi familiaritzis
-	</p>
-	</div>
-	</td>
-	<td width="50%" align="left">
-	<img src="../Edit.png" border="0" style="margin-left:-50px;" />
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
-<tr>
-	<td width="100%" align="center">
+</div>
+<div class="FeatureContainer">
 	<div class="Feature">
-	<p class="Title" align="center">I TOT EL QUE ESPERES D'UN SOFTWARE DE NOTACIÓ MUSICAL</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Piano virtual</font>&nbsp;&nbsp;&nbsp;clica-hi per insertar notes o simplement per tocar. També pots tocar amb el teclat de l'ordinador
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Intèrpret de la partitura</font>&nbsp;&nbsp;&nbsp;escolta com DeluxeNote toca la teva partitura, mentre hi segueixes treballant!
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Impressió a PDF</font>&nbsp;&nbsp;&nbsp;o directament a la impressora
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Importació de MusicXML</font>&nbsp;&nbsp;&nbsp;des d'altres programes
-	</p>
-	<p class="Content" align="left">
-	<font class="Highlight">Idiomes:</font>&nbsp;&nbsp;&nbsp;Anglès, Francès, Castellà i Català
-	</p>
-	<p class="Content" align="center">
-	<br>Trobes a faltar res? Mira el <a href="../roadmap.htm" class="Link">Full de ruta del desenvolupament</a>
-	</p>
+		<p class="Title" align="left">EL ZOOM COM A EÏNA CLAU</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Roda del ratolí</font>&nbsp;&nbsp;&nbsp;Utilitza-la per apropar les notes, de la mateixa manera que t'acostes al paper quan escrius música a mà
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Zoom de l'extensió</font>&nbsp;&nbsp;&nbsp;d'un compàs concret, d'un sistema, d'una pàgina, de tot l'espai de treball... en un sol clic!
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Desplaçadors</font>&nbsp;&nbsp;&nbsp;Et cal desplaçar-te? Fes servir les rodes de la cantonada per desplaçar-te fàcilment en ambdues direccions
+		</p>
 	</div>
-	</td>
-</tr>
-</table>
+	<div class="FeatureImage">
+		<img src="../ZoomExtents.png" border=0"/>
+	</div>
+</div>
+<div class="FeatureContainer" style="background-color:#e7e7e7;">
+	<div class="FeatureImageLeft">
+		<img src="../Workspace.png" border=0" />
+	</div>
+	<div class="Feature">
+		<p class="Title" align="left">ESPAI DE TREBALL TIPUS ESCRIPTORI</p>
+		<p class="Content" align="left">
+		Escampa la música per un espai de treball il·limitat
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Partitures sense paper</font>&nbsp;&nbsp;&nbsp;<br />Esbossa les teves idees fora dels límits del paper
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Arbre del projecte</font>&nbsp;&nbsp;&nbsp;<br />Accedeix fàcilment a les partitures i les seves particel·les
+		</p>
+	</div>
+</div>
+<div class="FeatureContainer">
+	<div class="Feature">
+		<p class="Title" align="left">INTERFÍCIE ADAPTADA AL CONTEXT</p>
+		<p class="Content" align="left">
+		Totes les opcions que necessites, quan et calen
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Propietats</font>&nbsp;&nbsp;&nbsp;<br />Edita la majoria d'aspectes dels elements seleccionats
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Paleta contextual</font>&nbsp;&nbsp;&nbsp;<br />Accions disponibles per a la selecció actual
+		</p>
+	</div>
+	<div class="FeatureImage">
+		<img src="../Context.png" border="0">
+	</div>
+</div>
+<div class="FeatureContainer" style="background-color:#e7e7e7;">
+	<div class="FeatureImageLeft">
+		<img src="../Scratch.png" border="0" />
+	</div>
+	<div class="Feature">
+		<p class="Title" align="left">CREACIÓ DES DE ZERO SENZILLA</p>
+		<p class="Content" align="left">
+		Monta el que vols més depressa del que trigaries a escollir una plantilla
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Afageix pentagrames i barres</font>&nbsp;&nbsp;&nbsp;tan fàcilment com amb les notes
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Agrupa particel·les</font>&nbsp;&nbsp;&nbsp;i desagrupa-les en qualsevol moment
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Canvia els instruments</font>&nbsp;&nbsp;&nbsp; en un sol clic
+		</p>
+	</div>
+</div>
+<div class="FeatureContainer">
+	<div class="Feature">
+		<p class="Title" align="left">EDICIÓ AVANÇADA</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Desfer/refer infinits</font>&nbsp;&nbsp;&nbsp;<br />No et faci por fer canvis, pots tirar enrera tants cops com calgui
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">2 modes de selecció per finestra</font>&nbsp;&nbsp;&nbsp;<br />Cap a la dreta ho selecciones tot, cap a l'esquerra només notes
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Copia i enganxa</font>&nbsp;&nbsp;&nbsp;sols notes o també el pentagrama subjacent
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Arrossega elements</font>&nbsp;&nbsp;&nbsp;per canviar l'altura d'una nota, l'amplada d'un compàs, la distància entre pentagrames...
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Dreceres de teclat</font>&nbsp;&nbsp;&nbsp;<br />N'hi ha un munt per descobrir a mesura que t'hi familiaritzis
+		</p>
+	</div>
+	<div class="FeatureImage">
+		<img src="../Edit.png" border="0" />
+	</div>
+</div>
+<div class="FeatureContainer" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
+	<div class="Feature">
+		<p class="Title" align="center">I TOT EL QUE ESPERES D'UN SOFTWARE DE NOTACIÓ MUSICAL</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Piano virtual</font>&nbsp;&nbsp;&nbsp;clica-hi per insertar notes o simplement per tocar. També pots tocar amb el teclat de l'ordinador
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Intèrpret de la partitura</font>&nbsp;&nbsp;&nbsp;escolta com DeluxeNote toca la teva partitura, mentre hi segueixes treballant!
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Impressió a PDF</font>&nbsp;&nbsp;&nbsp;o directament a la impressora
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Importació de MusicXML</font>&nbsp;&nbsp;&nbsp;des d'altres programes
+		</p>
+		<p class="Content" align="left">
+		<font class="Highlight">Idiomes:</font>&nbsp;&nbsp;&nbsp;Anglès, Francès, Castellà i Català
+		</p>
+		<p class="Content" align="center">
+		<br>Trobes a faltar res? Mira el <a href="../roadmap.htm" class="Link">Full de ruta del desenvolupament</a>
+		</p>
+	</div>
+</div>
 <table width="1024" border="0" cellspacing="20" cellpadding="0">
 <tr>
 	<td align="left" valign="bottom">
@@ -276,5 +315,15 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 </tr>
 </table>
 </center>
+<script>
+window.setInterval(changeScreenshot,2000);
+var currentPNG=0;
+function changeScreenshot()
+{
+	if (currentPNG<4) currentPNG++;
+	else currentPNG=0;
+	document.getElementById("Screenshot").src="../Screenshot"+currentPNG+".png";
+}
+</script>
 </body>
 </html>
