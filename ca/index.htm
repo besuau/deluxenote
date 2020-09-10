@@ -65,18 +65,40 @@ table.Promos
 }
 @media only screen and (max-width: 1024px)
 {
+	.ScreenshotImg
+	{
+		width:90vw;
+	}
+	.FeatureImg
+	{
+		width:90vw;
+	}
 	.FeatureContainer
 	{
 		display: block;
 		padding-left: 20px;
 		padding-bottom: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 	.HighlightsContainer
 	{
 		display: none;
 	}
+	.Title
+	{
+		font-size:54pt;
+	}
+	.Highlight
+	{
+		font-size:18pt;
+	}
+	.Content
+	{
+		font-size:16pt;
+	}
 }
-@media only screen and (max-width: 1400px)
+@media only screen and (max-width: 1320px)
 {
 	.Promos
 	{
@@ -85,6 +107,13 @@ table.Promos
 	.ScreenshotContainer
 	{
 		margin-top:0px;
+	}
+}
+@media only screen and (max-width: 1400px)
+{
+	table.Promos
+	{
+		width: 100%;
 	}
 }
 </style>
@@ -175,7 +204,7 @@ table.Promos
 <tr>
 	<td align="center">
 	<div class="ScreenshotContainer">
-		<img id="Screenshot" src="../Screenshot0.png" width="640" height="344" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
+		<img id="Screenshot" class="ScreenshotImg" src="../Screenshot0.png" width="640" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
 	</div>
 	</td>
 </tr>
@@ -200,12 +229,12 @@ table.Promos
 		</p>
 	</div>
 	<div class="FeatureImage">
-		<img src="../ZoomExtents.png" border=0"/>
+		<img class="FeatureImg" src="../ZoomExtents.png" border=0"/>
 	</div>
 </div>
 <div class="FeatureContainer" style="background-color:#e7e7e7;">
 	<div class="FeatureImageLeft">
-		<img src="../Workspace.png" border=0" />
+		<img class="FeatureImg" src="../Workspace.png" border=0" />
 	</div>
 	<div class="Feature">
 		<p class="Title" align="left">ESPAI DE TREBALL TIPUS ESCRIPTORI</p>
@@ -234,12 +263,12 @@ table.Promos
 		</p>
 	</div>
 	<div class="FeatureImage">
-		<img src="../Context.png" border="0">
+		<img class="FeatureImg" src="../Context.png" border="0">
 	</div>
 </div>
 <div class="FeatureContainer" style="background-color:#e7e7e7;">
 	<div class="FeatureImageLeft">
-		<img src="../Scratch.png" border="0" />
+		<img class="FeatureImg" src="../Scratch.png" border="0" />
 	</div>
 	<div class="Feature">
 		<p class="Title" align="left">CREACIÓ DES DE ZERO SENZILLA</p>
@@ -277,7 +306,7 @@ table.Promos
 		</p>
 	</div>
 	<div class="FeatureImage">
-		<img src="../Edit.png" border="0" />
+		<img class="FeatureImg" src="../Edit.png" border="0" />
 	</div>
 </div>
 <div class="FeatureContainer" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
