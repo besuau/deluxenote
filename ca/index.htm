@@ -63,8 +63,21 @@ table.Promos
 {
 	margin-top:-160px;
 }
+.SmallHeader
+{
+	width:100vw;
+	display: none;
+}
 @media only screen and (max-width: 1024px)
 {
+	.Header
+	{
+		display: none;
+	}
+	.SmallHeader
+	{
+		display: block;
+	}
 	.ScreenshotImg
 	{
 		width:90vw;
@@ -123,7 +136,7 @@ table.Promos
 </head>
 <body style="background-color:#FFFFF; margin:0px;" >
 <center>
-<table width="1024" border="0" cellspacing="10" cellpadding="0">
+<table class="Header" width="1024" border="0" cellspacing="10" cellpadding="0">
 <tr>
 	<td rowspan="2" align="left" valign="top"><img src="../DeluxeNoteLogo.png" border=0" /></td>
 	<td rowspan="2" align="center" valign="top" class="Menu">
@@ -149,6 +162,29 @@ table.Promos
 		<a href="https://www.instagram.com/deluxenote" target="_blank" onmouseover="Instagram.src='../Instagram.png';" onmouseout="Instagram.src='../InstagramBW.png';"><img id="Instagram" src="../InstagramBW.png" valign="center" style="margin-left:10px;" /></a>
 		<a href="https://www.linkedin.com/showcase/deluxenote" target="_blank" onmouseover="LinkedIn.src='../LinkedIn.png';" onmouseout="LinkedIn.src='../LinkedInBW.png';"><img id="LinkedIn" src="../LinkedInBW.png" valign="center" style="margin-left:10px;" /></a>
 		<a href="https://www.youtube.com/channel/UCu-NOmu7LOclsrC4zcIYxaw" target="_blank" onmouseover="YouTube.src='../YouTube.png';" onmouseout="YouTube.src='../YouTubeBW.png';"><img id="YouTube" src="../YouTubeBW.png" valign="center" style="margin-left:10px;" /></a>
+	</div>
+	</td>
+</tr>
+</table>
+<table class="SmallHeader" border="0" cellspacing="10" cellpadding="0">
+<tr>
+	<td rowspan="2" align="left" valign="top" width="60%"><img src="../DeluxeNoteLogo.png" border=0" style="width:60vw; margin-bottom:3vw;" /></td>
+	<td width="40%" align="right" valign="top">
+	<div style="margin-top:2vw;" align="right" valign="top">
+		<a href="../" onmouseover="sEN.src='../En16.png';" onmouseout="sEN.src='../En16BW.png';"><img id="sEN" src="../En16BW.png" border=0" style="width:5vw;" /></a>
+		<a href="../fr/" onmouseover="sFR.src='../Fr16.png';" onmouseout="sFR.src='../Fr16BW.png';"><img id="sFR" src="../Fr16BW.png" border=0" style="width:5vw; margin-left:3vw;" /></a>
+		<a href="../es/" onmouseover="sES.src='../Es16.png';" onmouseout="sES.src='../Es16BW.png';"><img id="sES" src="../Es16BW.png" border=0" style="width:5vw; margin-left:3vw;" /></a>
+		<img src="../Ca16.png" border=0" style="width:5vw; margin-left:3vw;" />
+	</div>
+	</td>
+</tr>
+<tr>
+	<td align="right" valign="bottom">
+	<div style="margin-bottom:2vw;" align="right" valign="bottom">
+		<a href="https://twitter.com/deluxe_note" target="_blank" onmouseover="sTwitter.src='../Twitter.png';" onmouseout="sTwitter.src='../TwitterBW.png';"><img id="sTwitter" src="../TwitterBW.png" valign="center" style="width:5vw;" /></a>
+		<a href="https://www.instagram.com/deluxenote" target="_blank" onmouseover="sInstagram.src='../Instagram.png';" onmouseout="sInstagram.src='../InstagramBW.png';"><img id="sInstagram" src="../InstagramBW.png" valign="center" style="width:5vw; margin-left:2vw;" /></a>
+		<a href="https://www.linkedin.com/showcase/deluxenote" target="_blank" onmouseover="sLinkedIn.src='../LinkedIn.png';" onmouseout="sLinkedIn.src='../LinkedInBW.png';"><img id="sLinkedIn" src="../LinkedInBW.png" valign="center" style="width:5vw; margin-left:2vw;" /></a>
+		<a href="https://www.youtube.com/channel/UCu-NOmu7LOclsrC4zcIYxaw" target="_blank" onmouseover="sYouTube.src='../YouTube.png';" onmouseout="sYouTube.src='../YouTubeBW.png';"><img id="sYouTube" src="../YouTubeBW.png" valign="center" style="width:5vw; margin-left:2vw;" /></a>
 	</div>
 	</td>
 </tr>
