@@ -50,7 +50,11 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 <tr>
 	<td align="center">
 	<div style="width:984px;" align="left">
-	<center><p class="Title">Comprar DeluxeNote</p></center>
+	<center><p class="Title">
+		<font class="Title" style="margin-left:32px;">Comprar DeluxeNote</font>
+		<img id="Eurozone" align="right" src="../EU32.png" border=0" style="margin-left:10px; margin-right:0px; margin-top:-3px;" onmouseover="if (!inEurozone) src='../EU32.png';" onmouseout="if (!inEurozone) src='../EU32BW.png';" onClick="if (!inEurozone) toggleInEurozone();" />
+		<img id="World" align="right" src="../World32BW.png" border=0" title="Mostra els preus fora de la zona euro" style="margin-left:0px; margin-right:0px; margin-top:-3px; cursor:pointer;" onmouseover="if (inEurozone) src='../World32.png';" onmouseout="if (inEurozone) src='../World32BW.png';" onClick="if (inEurozone) toggleInEurozone();" />
+	</p></center>
 	<p class="Content">
 	Totes les llicències són electròniques -no hi ha enviament físic- i perpètues -no hi ha renovacions de subscripció-. Un cop hagis comprat rebràs un correu electrònic amb el <i>License Key</i> de la teva llicència, i instruccions per fer l'activació.<br>
 	<br>
@@ -60,9 +64,9 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 		<div class="Product">
 		<p class="Highlight" style="margin-top:10px;"><i>LLICÈNCIA ESTÀNDARD</i></p>
 		<p class="Content">Per professionals, amateurs i aficionats a la música</p>
-		<p class="Title2">79 $</p>
-		<p class="Title">49 $</p>
-		<p class="Content">Estalvia 30 $ adoptant DeluxeNote ben d'hora<br>&nbsp;</p>
+		<p class="Title2" id="Price">79,99 €</p>
+		<p class="Title" id="SalePrice">49<small><small><sup>,99</sup></small></small> €</p>
+		<p class="Content">Estalvia <font class="content" id="SaleAmount">30 €</font> adoptant DeluxeNote ben d'hora<br>&nbsp;</p>
 		<p><a href="https://besuau.onfastspring.com/deluxenote" target="_blank" class="Link" onClick="gtag('event','FastSpring Català',{'event_category':'Buy','event_label':'STANDARD LICENSE'});">Comprar</a></p>
 		</div>
 	</td>
@@ -71,12 +75,13 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 		<p class="Highlight" style="margin-top:10px;"><i>LLICÈNCIA EDUCACIONAL</i></p>
 		<p class="Content">Per estudiants i professors de música</p>
 		<p class="Title2">&nbsp;</p>
-		<p class="Title">19 $</p>
+		<p class="Title" id="EduPrice">19<small><small><sup>,99</sup></small></small> €</p>
 		<p class="Content">Es demanarà una certificació acadèmica<br>&nbsp;</p>
 		<p><a href="https://besuau.onfastspring.com/deluxenote-edu" target="_blank" class="Link" onClick="gtag('event','FastSpring Català',{'event_category':'Buy','event_label':'EDUCATIONAL LICENSE'});">Comprar</a></p>
 		</div>
 	</td>
 	</tr></table>
+	<center><div id="TaxesIncluded" class="Content" style="margin-bottom:-26px;"><small>Preus amb IVA inclòs</small><div></center>
 </tr>
 </table>
 <table width="1024" border="0" cellspacing="20" cellpadding="0">
@@ -92,4 +97,39 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 </table>
 </center>
 </body>
+<script>
+var inEurozone=true;
+function toggleInEurozone()
+{
+	inEurozone=!inEurozone;
+	if (inEurozone)
+	{
+		document.getElementById("World").style.cursor="pointer";
+		document.getElementById("World").src="../World32BW.png";
+		document.getElementById("World").title="Mostra els preus fora de la zona euro";
+		document.getElementById("Eurozone").style.cursor="auto";
+		document.getElementById("Eurozone").src="../EU32.png";
+		document.getElementById("Eurozone").title="";
+		document.getElementById("Price").innerHTML="79,99 €";
+		document.getElementById("SalePrice").innerHTML="49<small><small><sup>,99</sup></small></small> €";
+		document.getElementById("SaleAmount").innerHTML="30 €";
+		document.getElementById("EduPrice").innerHTML="19<small><small><sup>,99</sup></small></small> €";
+		document.getElementById("TaxesIncluded").innerHTML="<small>Preus amb IVA inclòs</small>";
+	}
+	else
+	{
+		document.getElementById("World").style.cursor="auto";
+		document.getElementById("World").src="../World32.png";
+		document.getElementById("World").title="";
+		document.getElementById("Eurozone").style.cursor="pointer";
+		document.getElementById("Eurozone").src="../EU32BW.png";
+		document.getElementById("Eurozone").title="Mostra els preus a la zona euro";
+		document.getElementById("Price").innerHTML="79,99 $";
+		document.getElementById("SalePrice").innerHTML="49<small><small><sup>,99</sup></small></small> $";
+		document.getElementById("SaleAmount").innerHTML="30 $";
+		document.getElementById("EduPrice").innerHTML="19<small><small><sup>,99</sup></small></small> $";
+		document.getElementById("TaxesIncluded").innerHTML="<small>&nbsp;</small>";
+	}
+}
+</script>
 </html>
