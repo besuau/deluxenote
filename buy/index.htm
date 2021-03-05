@@ -34,14 +34,14 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 <center>
 <table width="1024" border="0" cellspacing="10" cellpadding="0">
 <tr>
-	<td align="left" valign="top"><a href="/"><img src="DeluxeNoteLogo.png" border=0" /></a></td>
+	<td align="left" valign="top"><a href="../"><img src="../DeluxeNoteLogo.png" border=0" /></a></td>
 	<td align="center" valign="top" class="Menu"></td>
 	<td width="0%" align="right" valign="top">
 	<div style="margin-top:12px;" align="right" valign="top">
-		<font class="Footer"><img src="En16.png" valign="center" border=0" style="vertical-align:middle; margin-top:-2px;" /> English</font>
-		<a href="fr/buy.htm" class="Footer" onmouseover="FR.src='Fr16.png';" onmouseout="FR.src='Fr16BW.png';"><img id="FR" src="Fr16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Fr</a>
-		<a href="es/buy.htm" class="Footer" onmouseover="ES.src='Es16.png';" onmouseout="ES.src='Es16BW.png';"><img id="ES" src="Es16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Es</a>
-		<a href="ca/buy.htm" class="Footer" onmouseover="CA.src='Ca16.png';" onmouseout="CA.src='Ca16BW.png';"><img id="CA" src="Ca16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Ca</a>
+		<font class="Footer"><img src="../En16.png" valign="center" border=0" style="vertical-align:middle; margin-top:-2px;" /> English</font>
+		<a href="../fr/buy" class="Footer" onmouseover="FR.src='../Fr16.png';" onmouseout="FR.src='../Fr16BW.png';"><img id="FR" src="../Fr16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Fr</a>
+		<a href="../es/buy" class="Footer" onmouseover="ES.src='../Es16.png';" onmouseout="ES.src='../Es16BW.png';"><img id="ES" src="../Es16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Es</a>
+		<a href="../ca/buy" class="Footer" onmouseover="CA.src='../Ca16.png';" onmouseout="CA.src='../Ca16BW.png';"><img id="CA" src="../Ca16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Ca</a>
 	</div>
 	</td>
 </tr>
@@ -52,8 +52,8 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 	<div style="width:984px;" align="left">
 	<center><p class="Title">
 		<font class="Title" style="margin-left:74px;">Buy DeluxeNote</font>
-		<img id="Eurozone" align="right" src="EU32BW.png" border=0" title="Show prices for eurozone" style="margin-left:10px; margin-right:0px; margin-top:-3px; cursor:pointer;" onmouseover="if (!inEurozone) src='EU32.png';" onmouseout="if (!inEurozone) src='EU32BW.png';" onClick="if (!inEurozone) toggleInEurozone();" />
-		<img id="World" align="right" src="World32.png" border=0" style="margin-left:0px; margin-right:0px; margin-top:-3px;" onmouseover="if (inEurozone) src='World32.png';" onmouseout="if (inEurozone) src='World32BW.png';" onClick="if (inEurozone) toggleInEurozone();" />
+		<img id="Eurozone" align="right" src="../EU32BW.png" border=0" title="Show prices for eurozone" style="margin-left:10px; margin-right:0px; margin-top:-3px; cursor:pointer;" onmouseover="if (!inEurozone) src='../EU32.png';" onmouseout="if (!inEurozone) src='../EU32BW.png';" onClick="if (!inEurozone) toggleInEurozone();" />
+		<img id="World" align="right" src="../World32.png" border=0" style="margin-left:0px; margin-right:0px; margin-top:-3px;" onmouseover="if (inEurozone) src='../World32.png';" onmouseout="if (inEurozone) src='../World32BW.png';" onClick="if (inEurozone) toggleInEurozone();" />
 	</p></center>
 	<p class="Content">
 	All licenses are electronic -no physical shipping- and perpetual -no subscription renewals-. Once ordered you will receive by email the License Key of your license, along with activation instructions.<br>
@@ -90,8 +90,8 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 	<font class="Footer">Copyright © 2021 Besuau S.L.U. All rights reserved</font>
 	</td>
 	<td align="right" valign="bottom">
-	<a href="privacy-policy.htm" class="Footer">Privacy and cookies</a>
-	<a href="legal.htm" class="Footer">Legal</a>
+	<a href="../privacy-policy.htm" class="Footer">Privacy and cookies</a>
+	<a href="../legal.htm" class="Footer">Legal</a>
 	</td>
 </tr>
 </table>
@@ -104,10 +104,10 @@ function toggleInEurozone()
 	if (inEurozone)
 	{
 		document.getElementById("World").style.cursor="pointer";
-		document.getElementById("World").src="World32BW.png";
+		document.getElementById("World").src="../World32BW.png";
 		document.getElementById("World").title="Show prices outside the eurozone";
 		document.getElementById("Eurozone").style.cursor="auto";
-		document.getElementById("Eurozone").src="EU32.png";
+		document.getElementById("Eurozone").src="../EU32.png";
 		document.getElementById("Eurozone").title="";
 		document.getElementById("Price").innerHTML="79,99 €";
 		document.getElementById("SalePrice").innerHTML="49<small><small><sup>,99</sup></small></small> €";
@@ -118,10 +118,10 @@ function toggleInEurozone()
 	else
 	{
 		document.getElementById("World").style.cursor="auto";
-		document.getElementById("World").src="World32.png";
+		document.getElementById("World").src="../World32.png";
 		document.getElementById("World").title="";
 		document.getElementById("Eurozone").style.cursor="pointer";
-		document.getElementById("Eurozone").src="EU32BW.png";
+		document.getElementById("Eurozone").src="../EU32BW.png";
 		document.getElementById("Eurozone").title="Show prices for eurozone";
 		document.getElementById("Price").innerHTML="$79.99";
 		document.getElementById("SalePrice").innerHTML="$49<small><small><sup>.99</sup></small></small>";
