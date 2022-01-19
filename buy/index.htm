@@ -63,7 +63,6 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 	All licenses are electronic -no physical shipping- and perpetual -no subscription renewals-. Once ordered you will receive by email the License Key of your license, along with activation instructions.<br>
 	<br>
 	</p>
-	<center><div id="BuyDisabled" class="Content" style="margin-top:-20px;margin-bottom:20px;"><small>As of <b>25 October 2021</b>, it will not be possible to buy licenses due to a <b>temporary stop in the business activity</b>.<br><a href="mailto:deluxenote@besuau.com?subject=Buy DeluxeNote" class="Link"><b>Contact us</b></a>if you want us to notify you when we resume it.</small><div></center>
 	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
 	<td align="right" valign="top" width="50%">
 		<div class="Product">
@@ -72,7 +71,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 		<p class="Title2" id="Price">$79.99</p>
 		<p class="Title" id="SalePrice">$49<small><small><sup>.99</sup></small></small></p>
 		<p class="Content">Save <font class="content" id="SaleAmount">$30</font> adopting DeluxeNote in early stages<br>&nbsp;</p>
-		<p><a href="#" class="Link" onClick="gtag('event','FastSpring',{'event_category':'Buy','event_label':'STANDARD LICENSE'}); buyClicked();">Buy</a></p>
+		<p><a href="https://besuau.onfastspring.com/deluxenote" target="_blank" class="Link" onClick="gtag('event','FastSpring',{'event_category':'Buy','event_label':'STANDARD LICENSE'});">Buy</a></p>
 		</div>
 	</td>
 	<td align="left" valign="top" width="50%">
@@ -82,7 +81,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 		<p class="Title2">&nbsp;</p>
 		<p class="Title" id="EduPrice">$19<small><small><sup>.99</sup></small></small></p>
 		<p class="Content">Proof of educational status is required<br>&nbsp;</p>
-		<p><a href="#" class="Link" onClick="gtag('event','FastSpring',{'event_category':'Buy','event_label':'EDUCATIONAL LICENSE'}); buyClicked();">Buy</a></p>
+		<p><a href="https://besuau.onfastspring.com/deluxenote-edu" target="_blank" class="Link" onClick="gtag('event','FastSpring',{'event_category':'Buy','event_label':'EDUCATIONAL LICENSE'});">Buy</a></p>
 		</div>
 	</td>
 	</tr></table>
@@ -134,11 +133,6 @@ function toggleInEurozone()
 		document.getElementById("EduPrice").innerHTML="$19<small><small><sup>.99</sup></small></small>";
 		document.getElementById("TaxesIncluded").innerHTML="<small>&nbsp;</small>";
 	}
-}
-function buyClicked()
-{
-	document.getElementById("BuyDisabled").style.color="#C45911";
-	document.getElementById("BuyDisabled").style.fontSize="14pt";
 }
 </script>
 </body>
