@@ -54,6 +54,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 	Todas las licencias son electrónicas -no hay envío físico- i perpetuas -no hay renovaciones de suscripción-. Una vez hayas comprado recibirás un correo electrónico con el <i>License Key</i> de tu licencia, e instrucciones para realizar la activación.<br>
 	<br>
 	</p>
+	<center><div id="BuyDisabled" class="Content" style="margin-top:-20px;margin-bottom:20px;"><small>Desde el <b>1 de julio de 2022</b>, no se pueden comprar licencias debido a un <b>cese de la actividad</b>.<br>Mientras no la reanudemos, puedes <a href="mailto:deluxenote@besuau.com?subject=Obtener un código de activación de DeluxeNote&body=Código de petición: [Pega aquí el código que aparece en el diálogo de licencia de DeluxeNote]" class="Link">solicitar un código de activación</a> gratuitamente.</small><div></center>
 	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
 	<td align="right" valign="top" width="50%">
 		<div class="Product">
@@ -62,7 +63,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 		<p class="Title2" id="Price">79,99 €</p>
 		<p class="Title" id="SalePrice">49<small><small><sup>,99</sup></small></small> €</p>
 		<p class="Content">Ahorra <font class="content" id="SaleAmount">30 €</font> adoptando DeluxeNote temprano<br>&nbsp;</p>
-		<p><a href="https://besuau.onfastspring.com/deluxenote" target="_blank" class="Link" onClick="buyClicked();">Comprar</a></p>
+		<p><a href="#" class="Link" onClick="buyClicked();">Comprar</a></p>
 		</div>
 	</td>
 	<td align="left" valign="top" width="50%">
@@ -72,7 +73,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 		<p class="Title2">&nbsp;</p>
 		<p class="Title" id="EduPrice">19<small><small><sup>,99</sup></small></small> €</p>
 		<p class="Content">Se pedirá una certificación académica<br>&nbsp;</p>
-		<p><a href="https://besuau.onfastspring.com/deluxenote-edu" target="_blank" class="Link" onClick="buyClicked();">Comprar</a></p>
+		<p><a href="#" class="Link" onClick="buyClicked();">Comprar</a></p>
 		</div>
 	</td>
 	</tr></table>
@@ -125,6 +126,11 @@ function toggleInEurozone()
 		document.getElementById("EduPrice").innerHTML="19<small><small><sup>,99</sup></small></small> $";
 		document.getElementById("TaxesIncluded").innerHTML="<small>&nbsp;</small>";
 	}
+}
+function buyClicked()
+{
+	document.getElementById("BuyDisabled").style.color="#C45911";
+	document.getElementById("BuyDisabled").style.fontSize="14pt";
 }
 </script>
 </html>
