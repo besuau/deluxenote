@@ -56,7 +56,6 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 	Totes les llicències són electròniques -no hi ha enviament físic- i perpètues -no hi ha renovacions de subscripció-. Un cop hagis comprat rebràs un correu electrònic amb el <i>License Key</i> de la teva llicència, i instruccions per fer l'activació.<br>
 	<br>
 	</p>
-	<center><div id="BuyDisabled" class="Content" style="margin-top:-20px;margin-bottom:20px;"><small>Des de l'<b>1 de juliol de 2022</b>, no es poden comprar llicències degut a un <b>cessament de l'activitat</b>.<br>Mentre no la reprenguem, pots <a href="mailto:deluxenote@besuau.com?subject=Obtenir un codi d'activació del DeluxeNote&body=Codi de petició: [Enganxa aquí el codi que apareix al diàleg de llicència del DeluxeNote]" class="Link">demanar un codi d'activació</a> de franc.</small><div></center>
 	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
 	<td align="right" valign="top" width="50%">
 		<div class="Product">
@@ -65,7 +64,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 		<p class="Title2" id="Price">79,99 €</p>
 		<p class="Title" id="SalePrice">49<small><small><sup>,99</sup></small></small> €</p>
 		<p class="Content">Estalvia <font class="content" id="SaleAmount">30 €</font> adoptant DeluxeNote ben d'hora<br>&nbsp;</p>
-		<p><a href="#" class="Link" onClick="buyClicked();">Comprar</a></p>
+		<p><a href="https://besuau.onfastspring.com/deluxenote" target="_blank" class="Link" onClick="buyClicked();">Comprar</a></p>
 		</div>
 	</td>
 	<td align="left" valign="top" width="50%">
@@ -75,7 +74,7 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 		<p class="Title2">&nbsp;</p>
 		<p class="Title" id="EduPrice">19<small><small><sup>,99</sup></small></small> €</p>
 		<p class="Content">Es demanarà una certificació acadèmica<br>&nbsp;</p>
-		<p><a href="#" class="Link" onClick="buyClicked();">Comprar</a></p>
+		<p><a href="https://besuau.onfastspring.com/deluxenote-edu" target="_blank" class="Link" onClick="buyClicked();">Comprar</a></p>
 		</div>
 	</td>
 	</tr></table>
@@ -128,11 +127,6 @@ function toggleInEurozone()
 		document.getElementById("EduPrice").innerHTML="19<small><small><sup>,99</sup></small></small> $";
 		document.getElementById("TaxesIncluded").innerHTML="<small>&nbsp;</small>";
 	}
-}
-function buyClicked()
-{
-	document.getElementById("BuyDisabled").style.color="#C45911";
-	document.getElementById("BuyDisabled").style.fontSize="14pt";
 }
 </script>
 </html>
