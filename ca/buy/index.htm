@@ -62,17 +62,19 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 		<p class="Highlight" style="margin-top:10px;"><i>LLICÈNCIA ESTÀNDARD</i></p>
 		<p class="Content">Per professionals, amateurs i aficionats a la música</p>
 		<p class="Title2" id="Price">79,99 €</p>
-		<p class="Content">&nbsp;</p>
-		<p><a href="mailto:deluxenote@besuau.com?subject=Obtenir un codi d'activació del DeluxeNote&body=Codi de petició: [Enganxa aquí el codi que apareix al diàleg de llicència del DeluxeNote]" class="Link">Demana un codi d'activació de franc</a></p>
+		<p class="Title" id="SalePrice">49<small><small><sup>,99</sup></small></small> €</p>
+		<p class="Content">D'oferta: estalvia <font class="content" id="SaleAmount">30 €</font>, fins al 31 d'octubre<br>&nbsp;</p>
+		<p><a href="https://besuau.onfastspring.com/deluxenote" target="_blank" class="Link" onClick="buyClicked();">Comprar</a></p>
 		</div>
 	</td>
 	<td align="left" valign="top" width="50%">
 		<div class="Product">
 		<p class="Highlight" style="margin-top:10px;"><i>LLICÈNCIA EDUCACIONAL</i></p>
 		<p class="Content">Per estudiants i professors de música</p>
-		<p class="Title2" id="EduPrice">19,99 €</p>
-		<p class="Content">&nbsp;</p>
-		<p><a href="mailto:deluxenote@besuau.com?subject=Obtenir un codi d'activació del DeluxeNote&body=Codi de petició: [Enganxa aquí el codi que apareix al diàleg de llicència del DeluxeNote]" class="Link">Demana un codi d'activació de franc</a></p>
+		<p class="Title2">&nbsp;</p>
+		<p class="Title" id="EduPrice">19<small><small><sup>,99</sup></small></small> €</p>
+		<p class="Content">Es demanarà una certificació acadèmica<br>&nbsp;</p>
+		<p><a href="https://besuau.onfastspring.com/deluxenote-edu" target="_blank" class="Link" onClick="buyClicked();">Comprar</a></p>
 		</div>
 	</td>
 	</tr></table>
@@ -106,7 +108,9 @@ function toggleInEurozone()
 		document.getElementById("Eurozone").src="../../EU32.png";
 		document.getElementById("Eurozone").title="";
 		document.getElementById("Price").innerHTML="79,99 €";
-		document.getElementById("EduPrice").innerHTML="19,99 €";
+		document.getElementById("SalePrice").innerHTML="49<small><small><sup>,99</sup></small></small> €";
+		document.getElementById("SaleAmount").innerHTML="30 €";
+		document.getElementById("EduPrice").innerHTML="19<small><small><sup>,99</sup></small></small> €";
 		document.getElementById("TaxesIncluded").innerHTML="<small>Preus amb IVA inclòs</small>";
 	}
 	else
@@ -118,7 +122,9 @@ function toggleInEurozone()
 		document.getElementById("Eurozone").src="../../EU32BW.png";
 		document.getElementById("Eurozone").title="Mostra els preus a la zona euro";
 		document.getElementById("Price").innerHTML="79,99 $";
-		document.getElementById("EduPrice").innerHTML="19,99 $";
+		document.getElementById("SalePrice").innerHTML="49<small><small><sup>,99</sup></small></small> $";
+		document.getElementById("SaleAmount").innerHTML="30 $";
+		document.getElementById("EduPrice").innerHTML="19<small><small><sup>,99</sup></small></small> $";
 		document.getElementById("TaxesIncluded").innerHTML="<small>&nbsp;</small>";
 	}
 }

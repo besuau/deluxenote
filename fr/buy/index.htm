@@ -62,17 +62,19 @@ a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; bor
 		<p class="Highlight" style="margin-top:10px;"><i>LICENCE STANDARD</i></p>
 		<p class="Content">Pour les professionnels et les fans de la musique</p>
 		<p class="Title2" id="Price">79,99 €</p>
-		<p class="Content">&nbsp;</p>
-		<p><a href="mailto:deluxenote@besuau.com?subject=Obtenir un code d'activation de DeluxeNote&body=Code de demande: [Collez ici le code qui apparaît dans le dialogue de licence de DeluxeNote]" class="Link">Demander un code d'activation gratuitement</a></p>
+		<p class="Title" id="SalePrice">49<small><small><sup>,99</sup></small></small> €</p>
+		<p class="Content">En solde: économisez <font class="content" id="SaleAmount">30 €</font>, jusqu'au 31 octobre<br>&nbsp;</p>
+		<p><a href="https://besuau.onfastspring.com/deluxenote" target="_blank" class="Link" onClick="buyClicked();">Acheter</a></p>
 		</div>
 	</td>
 	<td align="left" valign="top" width="50%">
 		<div class="Product">
 		<p class="Highlight" style="margin-top:10px;"><i>LICENCE ÉDUCATIONNEL</i></p>
 		<p class="Content">Pour enseignants et étudiants de musique</p>
-		<p class="Title2" id="EduPrice">19,99 €</p>
-		<p class="Content">&nbsp;</p>
-		<p><a href="mailto:deluxenote@besuau.com?subject=Obtenir un code d'activation de DeluxeNote&body=Code de demande: [Collez ici le code qui apparaît dans le dialogue de licence de DeluxeNote]" class="Link">Demander un code d'activation gratuitement</a></p>
+		<p class="Title2">&nbsp;</p>
+		<p class="Title" id="EduPrice">19<small><small><sup>,99</sup></small></small> €</p>
+		<p class="Content">Une preuve du statut éducationnel est requise<br>&nbsp;</p>
+		<p><a href="https://besuau.onfastspring.com/deluxenote-edu" target="_blank" class="Link" onClick="buyClicked();">Acheter</a></p>
 		</div>
 	</td>
 	</tr></table>
@@ -106,7 +108,9 @@ function toggleInEurozone()
 		document.getElementById("Eurozone").src="../../EU32.png";
 		document.getElementById("Eurozone").title="";
 		document.getElementById("Price").innerHTML="79,99 €";
-		document.getElementById("EduPrice").innerHTML="19,99 €";
+		document.getElementById("SalePrice").innerHTML="49<small><small><sup>,99</sup></small></small> €";
+		document.getElementById("SaleAmount").innerHTML="30 €";
+		document.getElementById("EduPrice").innerHTML="19<small><small><sup>,99</sup></small></small> €";
 		document.getElementById("TaxesIncluded").innerHTML="<small>Prix ​​avec TVA incluse</small>";
 	}
 	else
@@ -118,7 +122,9 @@ function toggleInEurozone()
 		document.getElementById("Eurozone").src="../../EU32BW.png";
 		document.getElementById("Eurozone").title="Affiche les prix dans la zone euro";
 		document.getElementById("Price").innerHTML="79,99 $";
-		document.getElementById("EduPrice").innerHTML="19,99 $";
+		document.getElementById("SalePrice").innerHTML="49<small><small><sup>,99</sup></small></small> $";
+		document.getElementById("SaleAmount").innerHTML="30 $";
+		document.getElementById("EduPrice").innerHTML="19<small><small><sup>,99</sup></small></small> $";
 		document.getElementById("TaxesIncluded").innerHTML="<small>&nbsp;</small>";
 	}
 }
