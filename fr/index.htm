@@ -1,333 +1,205 @@
-﻿<html>
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:html="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="shortcut icon" href="../DeluxeNote.ico" />
+<link rel="shortcut icon" href="../DeluxeNote.ico">
+</link>
 <title>DeluxeNote · Logiciel de notation musicale pour Windows</title>
-<meta name"description" content="Logiciel pour écrire des partitions de musique sur PC avec Windows. DeluxeNote est un éditeur de partition fait pour faciliter le travail">
-<meta name"keywords" content="logiciel d'édition de partitions, musique, notation musicale, partition, logiciel, éditeur de partition, composition, musicxml">
+<meta name="description" content="Music Notation Software for PC with Windows. DeluxeNote is a scorewriter designed to let you write sheet music easier and faster" />
+<meta name="keywords" content="music, notation, software, score, sheet music, scorewriter, compose, arrange, program, musicxml" />
 <meta name="copyright" content="Besuau S.L.U." />
-<style>
-.Menu { color: #a0a0a0a; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
-a.Menu { color: #7F7F7F; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:12px; padding-bottom:12px; padding-left:16px; padding-right:16px; }
-a:hover.Menu { border-style:solid; border-width: 1px; border-color: #C45911; color: #C45911; font-weight:bold; background-color:#f7f7f7; border-radius: 6px; }
-a.SmallMenu { color: #C45911; font-size:20pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:20px; padding-bottom:20px; padding-left:24px; padding-right:24px; border-style:solid; border-width: 2px; border-color: #C45911; border-radius: 10px; background-color:#f7f7f7; margin-left:20px; }
-.Title { color: #000000; font-size:22pt; font-weight:bold; font-family:candara,verdana,arial; text-decoration: none; }
-.TitleNumber { color: #C45911; font-size:25pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
-.Title2 { color: #C45911; font-size:20pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; line-height: 0px; }
-.Content { color: #666666; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
-a.Link { color: #C45911; font-size:11pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; padding-top:8px; padding-bottom:8px; padding-left:9px; padding-right:9px; border-radius: 6px; }
-a:hover.Link { border-style:solid; border-width: 1px; border-color: #C45911; padding-left:8px; padding-right:8px; }
-.Highlight { color: #444444; font-size:12pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; line-height: 26px; }
-.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
-a.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
-a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; border-radius: 6px; }
-.FeatureContainer
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-}
-table.Promos
-{
-	width: 1400px;
-}
-.Feature
-{
-	display:inline; width:528px; padding-top:20px; padding-bottom:40px; padding-right:16px; margin:0px;
-}
-.FeatureImage
-{
-	display:inline; width:480px;
-}
-.FeatureImageLeft
-{
-	display:inline; width:600px;
-}
-.FeaturePresentation
-{
-	display:inline; width:1024px; padding-top:10px; padding-bottom:10px; padding-right:0px; margin:0px;
-}
-.HighlightsContainer
-{
-	width:360px; margin-left:180px; padding:5px; background-color:#ffffff; border-radius:0px 0px 8px 8px;
-}
-.SmallHeader
-{
-	width:100vw;
-	display: none;
-}
-@media only screen and (max-width: 1024px)
-{
-	.Header
-	{
-		display: none;
-	}
-	.SmallHeader
-	{
-		display: block;
-	}
-	.ScreenshotImg
-	{
-		width:90vw;
-	}
-	.FeatureImg
-	{
-		width:90vw;
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-	.FeatureContainer
-	{
-		display: block;
-		padding-left: 20px;
-		padding-bottom: 20px;
-		padding-top: 20px;
-		padding-bottom: 60px;
-	}
-	.HighlightsContainer
-	{
-		display: none;
-	}
-	.Title
-	{
-		font-size:54pt;
-	}
-	.Highlight
-	{
-		font-size:24pt;
-		line-height: 48px;
-	}
-	.Content
-	{
-		font-size:20pt;
-	}
-}
-@media only screen and (max-width: 1320px)
-{
-	.Promos
-	{
-		display: none;
-	}
-	.ScreenshotContainer
-	{
-		margin-top:0px;
-	}
-}
-@media only screen and (max-width: 1400px)
-{
-	table.Promos
-	{
-		width: 100%;
-	}
-}
-</style>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</link>
 </head>
-<body style="background-color:#FFFFF; margin:0px;" >
-<center>
-<table class="Header" width="1024" border="0" cellspacing="10" cellpadding="0">
-<tr>
-	<td width="300" align="left" valign="top"><img src="../DeluxeNoteLogo.png" border=0" /></td>
-	<td width="402" align="left" valign="top" class="Menu">
-	<div style="margin-top:12px;">
-		<a href="download" class="Menu"><b>TÉLÉCHARGER</b></a>
-		<a href="buy" class="Menu">ACHAT</a>
-		<a href="mailto:deluxenote@besuau.com" class="Menu">ASSISTANCE</a>
-	</div>
-	</td>
-	<td width="322" align="right" valign="top">
-	<div style="margin-top:12px;" align="right" valign="top">
-		<a href="../" class="Footer" onmouseover="EN.src='../En16.png';" onmouseout="EN.src='../En16BW.png';"><img id="EN" src="../En16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> En</a>
-		<font class="Footer"><img id="FR" src="../Fr16.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Français</font>
-		<a href="../es/" class="Footer" onmouseover="ES.src='../Es16.png';" onmouseout="ES.src='../Es16BW.png';"><img id="ES" src="../Es16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Es</a>
-		<a href="../ca/" class="Footer" onmouseover="CA.src='../Ca16.png';" onmouseout="CA.src='../Ca16BW.png';"><img id="CA" src="../Ca16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Ca</a>
-	</div>
-	</td>
-</tr>
-</table>
-<table class="SmallHeader" border="0" cellspacing="10" cellpadding="0">
-<tr>
-	<td align="left" valign="top" width="60%"><img src="../DeluxeNoteLogo.png" border=0" style="width:60vw; margin-bottom:3vw;" /></td>
-	<td width="40%" align="right" valign="top">
-	<div style="margin-top:2vw;" align="right" valign="top">
-		<a href="../" onmouseover="sEN.src='../En16.png';" onmouseout="sEN.src='../En16BW.png';"><img id="sEN" src="../En16BW.png" border=0" style="width:5vw;" /></a>
-		<img src="../Fr16.png" border=0" style="width:5vw; margin-left:3vw;" />
-		<a href="../es/" onmouseover="sES.src='../Es16.png';" onmouseout="sES.src='../Es16BW.png';"><img id="sES" src="../Es16BW.png" border=0" style="width:5vw; margin-left:3vw;" /></a>
-		<a href="../ca/" onmouseover="sCA.src='../Ca16.png';" onmouseout="sCA.src='../Ca16BW.png';"><img id="sCA" src="../Ca16BW.png" border=0" style="width:5vw; margin-left:3vw;" /></a>
-	</div>
-	</td>
-</tr>
-<tr>
-	<td colspan="2" align="center" valign="top" class="SmallMenu">
-	<div style="margin-top:0px;margin-bottom:32px;">
-		<a href="download" class="SmallMenu"><b>TÉLÉCHARGER</b></a>
-		<a href="buy" class="SmallMenu">ACHAT</a>
-		<a href="mailto:deluxenote@besuau.com" class="SmallMenu">ASSISTANCE</a>
-	</div>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
-<tr>
-	<td align="center">
-	<div class="FeatureContainer">
-		<div class="FeaturePresentation">
-		<p class="Title2">
-			Logiciel de notation musicale pour Windows
-		</p>
-		<table width="100%" border="0" cellspacing="10" cellpadding="0" class="Highlight">
-		<tr>
-			<td width="33%" align="center">Rapide<br><font class="Content">Même sur les vieux ordinateurs</font></td>
-			<td width="33%" align="center">Convivial<br><font class="Content">Facile à utiliser pour les débutants</font></td>
-			<td width="34%" align="center">Confidentiel<br><font class="Content">Pas de connexion, pas d'analyse d'utilisation</fontp></td>
-		</tr>
-		</table>
-		</div>
-	</div>
-	<div class="ScreenshotContainer">
-		<img id="Screenshot" class="ScreenshotImg" src="Screenshot0.png" width="1120" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
-	</div>
-	</td>
-</tr>
-</table>
-<div class="FeatureContainer">
-	<div class="Feature">
-		<p class="Title" align="left">LE ZOOM COMME OUTIL CLÉ</p>
-		<p class="Content" align="left">Dans DeluxeNote, le zoom fait la différence. C'est aussi naturelle que s'approcher du papier lorsque vous écrivez à la main. Essaye-le !</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Molette de souris</font>&nbsp;&nbsp;&nbsp;Zoomez et dézoomez simplement en la roulant
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Zoom de l'extension</font>&nbsp;&nbsp;&nbsp;d'une mesure, d'un système, d'une page, de tout l'espace de travail... en un seul clic de molette de souris !
-		</p>
-	</div>
-	<div class="FeatureImage">
-		<img class="FeatureImg" src="../ZoomExtents.png" border=0"/>
-	</div>
+<body>
+<div class="headerContainer">
+<a href="./">
+<img class="headerLogo" border="0" src="../images/DeluxeNoteLogoFit.png">
+</img>
+</a>
+<div class="headerMenu">
+<a class="menuItem" href="download/" title="TÉLÉCHARGER">TÉLÉCHARGER</a>
+<a class="menuItem" href="buy/" title="ACHAT">ACHAT</a>
+<a class="menuItem" href="mailto:deluxenote@besuau.com" title="ASSISTANCE">ASSISTANCE</a>
 </div>
-<div class="FeatureContainer" style="background-color:#e7e7e7;">
-	<div class="FeatureImageLeft">
-		<img class="FeatureImg" src="../Workspace.png" border=0" />
-	</div>
-	<div class="Feature">
-		<p class="Title" align="left">ESPACE DE TRAVAIL DE TYPE BUREAU</p>
-		<p class="Content" align="left">
-		Étalez la musique sur un espace de travail illimité
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Partitions sans papier</font>&nbsp;&nbsp;&nbsp;<br />Ébauchez vos idées au-delà des limites du papier
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Arborescence du projet</font>&nbsp;&nbsp;&nbsp;<br />Accédez facilement aux partitions étalées et à ses parties
-		</p>
-	</div>
+<div class="headerLanguages">
+<a class="language" href="../" onmouseover="EN.src='../images/En16.png';" onmouseout="EN.src='../images/En16BW.png';">
+<img id="EN" class="languageIcon" border="0" src="../images/En16BW.png">
+</img>
+				 En
+			</a>
+<font class="language">
+<img class="languageIcon" border="0" src="../images/Fr16.png">
+</img>
+					 Français
+				</font>
+<a class="language" href="../es/" onmouseover="ES.src='../images/Es16.png';" onmouseout="ES.src='../images/Es16BW.png';">
+<img id="ES" class="languageIcon" border="0" src="../images/Es16BW.png">
+</img>
+					 Es
+				</a>
+<a class="language" href="../ca/" onmouseover="CA.src='../images/Ca16.png';" onmouseout="CA.src='../images/Ca16BW.png';">
+<img id="CA" class="languageIcon" border="0" src="../images/Ca16BW.png">
+</img>
+					 Ca
+				</a>
 </div>
-<div class="FeatureContainer">
-	<div class="Feature">
-		<p class="Title" align="left">UI SENSIBLE AU CONTEXTE</p>
-		<p class="Content" align="left">
-		Toutes les options qu'il vous faut, quand vous en avez besoin
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Propriétés</font>&nbsp;&nbsp;&nbsp;<br />Modifiez la plupart des aspects des éléments sélectionnés
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Palette contextuelle</font>&nbsp;&nbsp;&nbsp;<br />Actions disponibles pour la sélection actuelle
-		</p>
-	</div>
-	<div class="FeatureImage">
-		<img class="FeatureImg" src="../Context.png" border="0">
-	</div>
 </div>
-<div class="FeatureContainer" style="background-color:#e7e7e7;">
-	<div class="FeatureImageLeft">
-		<img class="FeatureImg" src="../Scratch.png" border="0" />
-	</div>
-	<div class="Feature">
-		<p class="Title" align="left">CRÉATION À PARTIR DE ZÉRO SIMPLE</p>
-		<p class="Content" align="left">
-		Créez la base en moins de temps qu'il n'en faut pour choisir un modèle
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Ajoutez des portées/mesures</font>&nbsp;&nbsp;&nbsp;aussi vite qu'avec les notes
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Groupez des parties</font>&nbsp;&nbsp;&nbsp;et dissociez-les à tout moment
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Changez les instruments</font>&nbsp;&nbsp;&nbsp; en un seul clic
-		</p>
-	</div>
+<div class="frontContainer">
+<div class="frontTitle" align="center">Logiciel de notation musicale pour Windows</div>
+<div class="frontHighlightsContainer">
+<div class="frontHighlight" align="center">Rapide<p class="content">Même sur de vieux ordinateurs ou bas de gamme</p>
 </div>
-<div class="FeatureContainer">
-	<div class="Feature">
-		<p class="Title" align="left">ÉDITION AVANCÉE</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Annuler/rétablir infini</font>&nbsp;&nbsp;&nbsp;<br />N'ayez pas peur de tout modifier, vous pouvez toujours reculer
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">2 modes de sélection par fenêtre</font>&nbsp;&nbsp;&nbsp;<br />À droite vous sélectionnez tout, à gauche uniquement les notes
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Copiez-collez</font>&nbsp;&nbsp;&nbsp;les notes seules ou avec la portée sous-jacente
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Faites glisser les éléments</font>&nbsp;&nbsp;&nbsp;pour modifier l'hauteur d'une note, la largeur d'une mesure, la séparation entre les portées...
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Raccourcis clavier</font>&nbsp;&nbsp;&nbsp;<br />Il y en a plein à decouvrir au fur et à mesure que vous familiarisiez
-		</p>
-	</div>
-	<div class="FeatureImage">
-		<img class="FeatureImg" src="../Edit.png" border="0" />
-	</div>
+<div class="frontHighlight" align="center">Convivial<p class="content">Facile à utiliser pour les débutants</p>
 </div>
-<div class="FeatureContainer" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
-	<div class="Feature">
-		<p class="Title" align="center">ET TOUT CE QU'ON ATTEND D'UN ÉDITEUR DE PARTITIONS MUSICALES</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Piano virtuel</font>&nbsp;&nbsp;&nbsp;cliquez dessus pour insérer des notes ou pour jouer. Vous pouvez également y jouer en appuyant sur les touches
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Joueur de la partition</font>&nbsp;&nbsp;&nbsp;écoutez DeluxeNote interpréter vos partitions, tout en continuant à y travailler !
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Impression PDF</font>&nbsp;&nbsp;&nbsp;ou directement à l'imprimante
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Importer et exporter MusicXML</font>&nbsp;&nbsp;&nbsp;vers d'autres programmes
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Fichiers MIDI</font>&nbsp;&nbsp;&nbsp;convertissez-les en partitions ou obtenez des enregistrements MIDI à partir de vos partitions
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Langues:</font>&nbsp;&nbsp;&nbsp;Anglais, Français, Espagnol et Catalan
-		</p>
-		<p class="Content" align="center">
-		<br>Il vous manque quelque chose? Regardez la <a href="../roadmap.htm" class="Link">Feuille de route</a>
-		</p>
-	</div>
+<div class="frontHighlight" align="center">Confidentiel<p class="content">Pas de connexion, pas d'analyse d'utilisation</p>
 </div>
-<table width="1024" border="0" cellspacing="20" cellpadding="0">
-<tr>
-	<td align="left" valign="bottom">
-	<font class="Footer">Copyright © 2024 Besuau S.L.U. Tous les droits sont réservés</font>
-	</td>
-	<td align="right" valign="bottom">
-	<a href="privacy-policy.htm" class="Footer">Confidentialité</a>
-	<a href="legal.htm" class="Footer">Légal</a>
-	</td>
-</tr>
-</table>
-</center>
-<script>
+</div>
+<img id="Screenshot" class="frontScreenshot" src="images/Screenshot0.png" border="0" />
+</div>
+<div class="featureContainerA">
+<div align="left" class="feature">
+<p class="title">LE ZOOM COMME OUTIL CLÉ</p>
+<p class="content">
+<font class="highlight"></font><description>Dans DeluxeNote, le zoom fait la différence. C'est aussi naturelle que s'approcher du papier lorsque vous écrivez à la main. Essaye-le !</description>
+</p>
+<p class="content">
+<font class="highlight">Molette de souris</font><description>  Zoomez et dézoomez simplement en la roulant</description>
+</p>
+<p class="content">
+<font class="highlight">Zoom de l'extension</font><description>  d'une mesure, d'un système, d'une page, de tout l'espace de travail... en un seul clic de molette de souris !</description>
+</p>
+</div>
+<div class="feature" align="left">
+<img class="featureImage" border="0" src="../images/ZoomExtents.png">
+</img>
+</div>
+</div>
+<div class="featureContainerB">
+<div class="feature" align="left">
+<img class="featureImage" border="0" src="../images/Workspace.png">
+</img>
+</div>
+<div align="left" class="feature">
+<p class="title">ESPACE DE TRAVAIL DE TYPE BUREAU</p>
+<p class="content">
+<font class="highlight"></font><description>Étalez la musique sur un espace de travail illimité</description>
+</p>
+<p class="content">
+<font class="highlight">Partitions sans papier</font><description><br />Ébauchez vos idées au-delà des limites du papier</description>
+</p>
+<p class="content">
+<font class="highlight">Arborescence du projet</font><description><br />Accédez facilement aux partitions étalées et à ses parties</description>
+</p>
+</div>
+</div>
+<div class="featureContainerA">
+<div align="left" class="feature">
+<p class="title">UI SENSIBLE AU CONTEXTE</p>
+<p class="content">
+<font class="highlight"></font><description>Toutes les options qu'il vous faut, quand vous en avez besoin</description>
+</p>
+<p class="content">
+<font class="highlight">Propriétés</font><description><br />Modifiez la plupart des aspects des éléments sélectionnés</description>
+</p>
+<p class="content">
+<font class="highlight">Palette contextuelle</font><description><br />Actions disponibles pour la sélection actuelle</description>
+</p>
+</div>
+<div class="feature" align="left">
+<img class="featureImage" border="0" src="../images/Context.png">
+</img>
+</div>
+</div>
+<div class="featureContainerB">
+<div class="feature" align="left">
+<img class="featureImage" border="0" src="../images/Scratch.png">
+</img>
+</div>
+<div align="left" class="feature">
+<p class="title">CRÉATION À PARTIR DE ZÉRO SIMPLE</p>
+<p class="content">
+<font class="highlight"></font><description>Créez la base en moins de temps qu'il n'en faut pour choisir un modèle</description>
+</p>
+<p class="content">
+<font class="highlight">Ajoutez des portées/mesures</font><description>  aussi vite qu'avec les notes</description>
+</p>
+<p class="content">
+<font class="highlight">Groupez des parties</font><description>  et dissociez-les à tout moment</description>
+</p>
+<p class="content">
+<font class="highlight">Changez les instruments</font><description>  en un seul clic</description>
+</p>
+</div>
+</div>
+<div class="featureContainerA">
+<div align="left" class="feature">
+<p class="title">ÉDITION AVANCÉE</p>
+<p class="content">
+<font class="highlight">Annuler/rétablir infini</font><description><br />N'ayez pas peur de tout modifier, vous pouvez toujours reculer</description>
+</p>
+<p class="content">
+<font class="highlight">2 modes de sélection par fenêtre</font><description><br />À droite vous sélectionnez tout, à gauche uniquement les notes</description>
+</p>
+<p class="content">
+<font class="highlight">Copiez-collez</font><description>  les notes seules ou avec la portée sous-jacente</description>
+</p>
+<p class="content">
+<font class="highlight">Faites glisser les éléments</font><description>  pour modifier l'hauteur d'une note, la largeur d'une mesure, la séparation entre les portées...</description>
+</p>
+<p class="content">
+<font class="highlight">Raccourcis clavier</font><description><br />Il y en a plein à decouvrir au fur et à mesure que vous familiarisiez</description>
+</p>
+</div>
+<div class="feature" align="left">
+<img class="featureImage" border="0" src="../images/Edit.png">
+</img>
+</div>
+</div>
+<div class="featureContainerC">
+<div align="left" class="featureWide">
+<p class="title">ET TOUT CE QU'ON ATTEND D'UN ÉDITEUR DE PARTITIONS MUSICALES</p>
+<p class="content">
+<font class="highlight">Piano virtuel</font><description>  cliquez dessus pour insérer des notes ou jouer. Vous pouvez également y jouer en appuyant sur les touches</description>
+</p>
+<p class="content">
+<font class="highlight">Joueur de la partition</font><description>  écoutez DeluxeNote interpréter vos partitions, tout en continuant à y travailler !</description>
+</p>
+<p class="content">
+<font class="highlight">Impression PDF</font><description>  ou directement à l'imprimante</description>
+</p>
+<p class="content">
+<font class="highlight">Importer et exporter MusicXML</font><description>  vers d'autres programmes</description>
+</p>
+<p class="content">
+<font class="highlight">Fichiers MIDI</font><description>  convertissez-les en partitions ou obtenez des enregistrements MIDI à partir de vos partitions</description>
+</p>
+<p class="content">
+<font class="highlight">Langues:</font><description>  Anglais, Français, Espagnol et Catalan</description>
+</p>
+<p class="content" align="center">
+<bottom><br />Il vous manque quelque chose? Regardez la <a href="roadmap.htm" class="link">Feuille de route</a></bottom>
+</p>
+</div>
+</div>
+<div class="footerContainer">
+<div class="leftFooter"><font class="footerOptional">Copyright </font>© 2024 Besuau S.L.U.<font class="footerOptional"> Tous les droits sont réservés</font></div>
+<div class="rightFooter">
+<a class="footerLink" href="privacy-policy.htm" title="Confidentialité">Confidentialité</a>
+<a class="footerLink" href="legal.htm" title="Légal">Légal</a>
+<a class="footerLink" href="company.htm" title="Entreprise">Entreprise</a>
+</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" xmlns:html="http://www.w3.org/1999/xhtml">
+
 window.setInterval(changeScreenshot,3000);
 var currentPNG=0;
 function changeScreenshot()
 {
 	if (currentPNG<6) currentPNG++;
 	else currentPNG=0;
-	document.getElementById("Screenshot").src="Screenshot"+currentPNG+".png";
+	document.getElementById("Screenshot").src="images/Screenshot"+currentPNG+".png";
 }
-</script>
-</body>
-</html>
+
+	</script>

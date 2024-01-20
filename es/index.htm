@@ -1,332 +1,205 @@
-﻿<html>
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:html="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="shortcut icon" href="../DeluxeNote.ico" />
+<link rel="shortcut icon" href="../DeluxeNote.ico">
+</link>
 <title>DeluxeNote · Software de notación musical para Windows</title>
-<meta name"description" content="Programa de notación musical para PC con Windows. DeluxeNote es un editor de partituras diseñado para permitir crear partituras muy fácilmente">
-<meta name"keywords" content="musica, notación, partitura, composición, arreglos, programa, musicxml">
+<meta name="description" content="Music Notation Software for PC with Windows. DeluxeNote is a scorewriter designed to let you write sheet music easier and faster" />
+<meta name="keywords" content="music, notation, software, score, sheet music, scorewriter, compose, arrange, program, musicxml" />
 <meta name="copyright" content="Besuau S.L.U." />
-<style>
-.Menu { color: #a0a0a0a; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
-a.Menu { color: #7F7F7F; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:12px; padding-bottom:12px; padding-left:16px; padding-right:16px; }
-a:hover.Menu { border-style:solid; border-width: 1px; border-color: #C45911; color: #C45911; font-weight:bold; background-color:#f7f7f7; border-radius: 6px; }
-a.SmallMenu { color: #C45911; font-size:20pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:20px; padding-bottom:20px; padding-left:24px; padding-right:24px; border-style:solid; border-width: 2px; border-color: #C45911; border-radius: 10px; background-color:#f7f7f7; margin-left:20px; }
-.Title { color: #000000; font-size:22pt; font-weight:bold; font-family:candara,verdana,arial; text-decoration: none; }
-.TitleNumber { color: #C45911; font-size:25pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; }
-.Title2 { color: #C45911; font-size:20pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; line-height: 0px; }
-.Content { color: #666666; font-size:11pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; }
-a.Link { color: #C45911; font-size:11pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; padding-top:8px; padding-bottom:8px; padding-left:9px; padding-right:9px; border-radius: 6px; }
-a:hover.Link { border-style:solid; border-width: 1px; border-color: #C45911; padding-left:8px; padding-right:8px; }
-.Highlight { color: #444444; font-size:12pt; font-weight:bold; font-family:verdana,arial; text-decoration: none; line-height: 26px; }
-.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
-a.Footer { color: #666666; font-size:10pt; font-weight:normal; font-family:verdana,arial; text-decoration: none; padding-top:10px; padding-bottom:10px; padding-left:12px; padding-right:12px; }
-a:hover.Footer { color: #000000; font-weight:bold; background-color:#e7e7e7; border-radius: 6px; }
-.FeatureContainer
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-}
-table.Promos
-{
-	width: 1400px;
-}
-.Feature
-{
-	display:inline; width:528px; padding-top:20px; padding-bottom:40px; padding-right:16px; margin:0px;
-}
-.FeatureImage
-{
-	display:inline; width:480px;
-}
-.FeatureImageLeft
-{
-	display:inline; width:600px;
-}
-.FeaturePresentation
-{
-	display:inline; width:1024px; padding-top:10px; padding-bottom:10px; padding-right:0px; margin:0px;
-}
-.HighlightsContainer
-{
-	width:360px; margin-left:180px; padding:5px; background-color:#ffffff; border-radius:0px 0px 8px 8px;
-}
-.SmallHeader
-{
-	width:100vw;
-	display: none;
-}
-@media only screen and (max-width: 1024px)
-{
-	.Header
-	{
-		display: none;
-	}
-	.SmallHeader
-	{
-		display: block;
-	}
-	.ScreenshotImg
-	{
-		width:90vw;
-	}
-	.FeatureImg
-	{
-		width:90vw;
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-	.FeatureContainer
-	{
-		display: block;
-		padding-left: 20px;
-		padding-bottom: 20px;
-		padding-top: 20px;
-		padding-bottom: 60px;
-	}
-	.HighlightsContainer
-	{
-		display: none;
-	}
-	.Title
-	{
-		font-size:54pt;
-	}
-	.Highlight
-	{
-		font-size:24pt;
-		line-height: 48px;
-	}
-	.Content
-	{
-		font-size:20pt;
-	}
-}
-@media only screen and (max-width: 1320px)
-{
-	.Promos
-	{
-		display: none;
-	}
-	.ScreenshotContainer
-	{
-		margin-top:0px;
-	}
-}
-@media only screen and (max-width: 1400px)
-{
-	table.Promos
-	{
-		width: 100%;
-	}
-}
-</style>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</link>
 </head>
-<body style="background-color:#FFFFF; margin:0px;" >
-<center>
-<table class="Header" width="1024" border="0" cellspacing="10" cellpadding="0">
-<tr>
-	<td width="330" align="left" valign="top"><img src="../DeluxeNoteLogo.png" border=0" /></td>
-	<td width="372" align="left" valign="top" class="Menu">
-	<div style="margin-top:12px;">
-		<a href="download" class="Menu"><b>DESCARGA</b></a>
-		<a href="buy" class="Menu">COMPRA</a>
-		<a href="mailto:deluxenote@besuau.com" class="Menu">SOPORTE</a>
-	</div>
-	</td>
-	<td width="322" align="right" valign="top">
-	<div style="margin-top:12px;" align="right" valign="top">
-		<a href="../" class="Footer" onmouseover="EN.src='../En16.png';" onmouseout="EN.src='../En16BW.png';"><img id="EN" src="../En16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> En</a>
-		<a href="../fr/" class="Footer" onmouseover="FR.src='../Fr16.png';" onmouseout="FR.src='../Fr16BW.png';"><img id="FR" src="../Fr16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Fr</a>
-		<font class="Footer"><img id="ES" src="../Es16.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Español</font>
-		<a href="../ca/" class="Footer" onmouseover="CA.src='../Ca16.png';" onmouseout="CA.src='../Ca16BW.png';"><img id="CA" src="../Ca16BW.png" border=0" style="vertical-align:middle; margin-top:-2px;" /> Ca</a>
-	</div>
-	</td>
-</tr>
-</table>
-<table class="SmallHeader" border="0" cellspacing="10" cellpadding="0">
-<tr>
-	<td align="left" valign="top" width="60%"><img src="../DeluxeNoteLogo.png" border=0" style="width:60vw; margin-bottom:3vw;" /></td>
-	<td width="40%" align="right" valign="top">
-	<div style="margin-top:2vw;" align="right" valign="top">
-		<a href="../" onmouseover="sEN.src='../En16.png';" onmouseout="sEN.src='../En16BW.png';"><img id="sEN" src="../En16BW.png" border=0" style="width:5vw;" /></a>
-		<a href="../fr/" onmouseover="sFR.src='../Fr16.png';" onmouseout="sFR.src='../Fr16BW.png';"><img id="sFR" src="../Fr16BW.png" border=0" style="width:5vw; margin-left:3vw;" /></a>
-		<img src="../Es16.png" border=0" style="width:5vw; margin-left:3vw;" />
-		<a href="../ca/" onmouseover="sCA.src='../Ca16.png';" onmouseout="sCA.src='../Ca16BW.png';"><img id="sCA" src="../Ca16BW.png" border=0" style="width:5vw; margin-left:3vw;" /></a>
-	</div>
-	</td>
-</tr>
-<tr>
-	<td colspan="2" align="center" valign="top" class="SmallMenu">
-	<div style="margin-top:0px;margin-bottom:32px;">
-		<a href="download" class="SmallMenu"><b>DESCARGA</b></a>
-		<a href="buy" class="SmallMenu">COMPRA</a>
-		<a href="mailto:deluxenote@besuau.com" class="SmallMenu">SOPORTE</a>
-	</div>
-	</td>
-</tr>
-</table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
-<tr>
-	<td align="center">
-	<div class="FeatureContainer">
-		<div class="FeaturePresentation">
-		<p class="Title2">
-			Software de notación musical para Windows
-		</p>
-		<table width="100%" border="0" cellspacing="10" cellpadding="0" class="Highlight">
-		<tr>
-			<td width="33%" align="center">Rápido<br><font class="Content">Incluso en equipos antiguos o modestos</font></td>
-			<td width="33%" align="center">Amigable<br><font class="Content">Fácil de utilizar por principiantes</font></td>
-			<td width="34%" align="center">Privado<br><font class="Content">Sin inicio de sesión ni estadísticas de uso</fontp></td>
-		</tr>
-		</table>
-		</div>
-	</div>	<div class="ScreenshotContainer">
-		<img id="Screenshot" class="ScreenshotImg" src="Screenshot0.png" width="1120" border=0" style="box-shadow: 2px 2px 9px #6b6b6b;" />
-	</div>
-	</td>
-</tr>
-</table>
-<div class="FeatureContainer">
-	<div class="Feature">
-		<p class="Title" align="left">EL ZOOM HERRAMIENTA MAESTRA</p>
-		<p class="Content" align="left">En DeluxeNote, el zoom marca la diferencia. Su uso resulta tan natural com acercarte al papel cuando escribes música a mano. ¡Pruébalo!</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Rueda de ratón</font>&nbsp;&nbsp;&nbsp;Hazla girar para acercarte y alejarte
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Zoom de la extensión</font>&nbsp;&nbsp;&nbsp;de un compás, de un sistema, de una página, del espacio de trabajo... ¡con solo clicar la rueda de ratón!
-		</p>
-	</div>
-	<div class="FeatureImage">
-		<img class="FeatureImg" src="../ZoomExtents.png" border=0"/>
-	</div>
+<body>
+<div class="headerContainer">
+<a href="./">
+<img class="headerLogo" border="0" src="../images/DeluxeNoteLogoFit.png">
+</img>
+</a>
+<div class="headerMenu">
+<a class="menuItem" href="download/" title="DESCARGA">DESCARGA</a>
+<a class="menuItem" href="buy/" title="COMPRA">COMPRA</a>
+<a class="menuItem" href="mailto:deluxenote@besuau.com" title="SOPORTE">SOPORTE</a>
 </div>
-<div class="FeatureContainer" style="background-color:#e7e7e7;">
-	<div class="FeatureImageLeft">
-		<img class="FeatureImg" src="../Workspace.png" border=0" />
-	</div>
-	<div class="Feature">
-		<p class="Title" align="left">METÁFORA DEL ESCRITORIO</p>
-		<p class="Content" align="left">
-		Esparce la música por un espacio de trabajo ilimitado
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Partituras sin papel</font>&nbsp;&nbsp;&nbsp;<br />Esboza tus ideas más allá de los límites del papel
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Explorador de proyecto</font>&nbsp;&nbsp;&nbsp;<br />Accede fácilmente a las partituras y sus partichelas
-		</p>
-	</div>
+<div class="headerLanguages">
+<a class="language" href="../" onmouseover="EN.src='../images/En16.png';" onmouseout="EN.src='../images/En16BW.png';">
+<img id="EN" class="languageIcon" border="0" src="../images/En16BW.png">
+</img>
+				 En
+			</a>
+<a class="language" href="../fr/" onmouseover="FR.src='../images/Fr16.png';" onmouseout="FR.src='../images/Fr16BW.png';">
+<img id="FR" class="languageIcon" border="0" src="../images/Fr16BW.png">
+</img>
+					 Fr
+				</a>
+<font class="language">
+<img class="languageIcon" border="0" src="../images/Es16.png">
+</img>
+					 Español
+				</font>
+<a class="language" href="../ca/" onmouseover="CA.src='../images/Ca16.png';" onmouseout="CA.src='../images/Ca16BW.png';">
+<img id="CA" class="languageIcon" border="0" src="../images/Ca16BW.png">
+</img>
+					 Ca
+				</a>
 </div>
-<div class="FeatureContainer">
-	<div class="Feature">
-		<p class="Title" align="left">INTERFAZ ADAPTADA AL CONTEXTO</p>
-		<p class="Content" align="left">
-		Todas las opciones que necesitas, cuando te hacen falta
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Propiedades</font>&nbsp;&nbsp;&nbsp;<br />Edita la mayoría de aspectos de los elementos seleccionados
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Paleta contextual</font>&nbsp;&nbsp;&nbsp;<br />Acciones disponibles para la selección actual
-		</p>
-	</div>
-	<div class="FeatureImage">
-		<img class="FeatureImg" src="../Context.png" border="0">
-	</div>
 </div>
-<div class="FeatureContainer" style="background-color:#e7e7e7;">
-	<div class="FeatureImageLeft">
-		<img class="FeatureImg" src="../Scratch.png" border="0" />
-	</div>
-	<div class="Feature">
-		<p class="Title" align="left">CREACIÓN DESDE CERO SENCILLA</p>
-		<p class="Content" align="left">
-		Consigue lo que deseas más deprisa que escojiendo una plantilla
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Añade pentagramas y barras</font>&nbsp;&nbsp;&nbsp;tan fácilmente como con las notas
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Agrupa partichelas</font>&nbsp;&nbsp;&nbsp;y desagrupalas en cualquier momento
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Cambia los instrumentos</font>&nbsp;&nbsp;&nbsp; en un solo clic
-		</p>
-	</div>
+<div class="frontContainer">
+<div class="frontTitle" align="center">Software de notación musical para Windows</div>
+<div class="frontHighlightsContainer">
+<div class="frontHighlight" align="center">Rápido<p class="content">Incluso en equipos viejos o modestos</p>
 </div>
-<div class="FeatureContainer">
-	<div class="Feature">
-		<p class="Title" align="left">EDICIÓN AVANZADA</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Deshacer/rehacer infinitos</font>&nbsp;&nbsp;&nbsp;<br />Haz cambios sin miedo, puedes ir atrás tantas veces como quieras
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">2 modos de selección por ventana</font>&nbsp;&nbsp;&nbsp;<br />Hacia la derecha seleccionas todo, hacia la izquierda solo notas
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Copia y pega</font>&nbsp;&nbsp;&nbsp;solo notas o también el pentagrama subyacente
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Arrastra elementos</font>&nbsp;&nbsp;&nbsp;para cambiar la altura de una nota, el ancho de un compás, la distancia entre pentagramas...
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Atajos de teclado</font>&nbsp;&nbsp;&nbsp;<br />Hay muchos por descubrir cuando te familiarices con DeluxeNote
-		</p>
-	</div>
-	<div class="FeatureImage">
-		<img class="FeatureImg" src="../Edit.png" border="0" />
-	</div>
+<div class="frontHighlight" align="center">Amigable<p class="content">Fácil de utilizar por principiantes</p>
 </div>
-<div class="FeatureContainer" style="background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7)">
-	<div class="Feature">
-		<p class="Title" align="center">Y TODO LO QUE ESPERAS DE UN PROGRAMA EDITOR DE PARTITURAS</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Piano virtual</font>&nbsp;&nbsp;&nbsp;clica en él para insertar notas o simplemente para tocar. También puedes tocar con el teclado del ordenador
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Intérprete de la partitura</font>&nbsp;&nbsp;&nbsp;escucha como DeluxeNote toca tu partitura, ¡mientras sigues trabajando en ella!
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Impresión a PDF</font>&nbsp;&nbsp;&nbsp;o directament a la impresora
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Importar y exportar MusicXML</font>&nbsp;&nbsp;&nbsp;desde y hacia otros programas
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Archivos MIDI</font>&nbsp;&nbsp;&nbsp;conviértelos en partituras u obtén grabaciones MIDI a partir de tus partituras
-		</p>
-		<p class="Content" align="left">
-		<font class="Highlight">Idiomas:</font>&nbsp;&nbsp;&nbsp;Inglés, Francés, Español y Catalán
-		</p>
-		<p class="Content" align="center">
-		<br>¿Echas de menos algo? Mira la <a href="../roadmap.htm" class="Link">Hoja de ruta del desarrollo</a>
-		</p>
-	</div>
+<div class="frontHighlight" align="center">Privado<p class="content">Sin inicio de sesión ni estadísticas de uso</p>
 </div>
-<table width="1024" border="0" cellspacing="20" cellpadding="0">
-<tr>
-	<td align="left" valign="bottom">
-	<font class="Footer">Copyright © 2024 Besuau S.L.U. Todos los derechos reservados</font>
-	</td>
-	<td align="right" valign="bottom">
-	<a href="privacy-policy.htm" class="Footer">Privacidad</a>
-	<a href="legal.htm" class="Footer">Legal</a>
-	</td>
-</tr>
-</table>
-</center>
-<script>
+</div>
+<img id="Screenshot" class="frontScreenshot" src="images/Screenshot0.png" border="0" />
+</div>
+<div class="featureContainerA">
+<div align="left" class="feature">
+<p class="title">EL ZOOM HERRAMIENTA MAESTRA</p>
+<p class="content">
+<font class="highlight"></font><description>En DeluxeNote, el zoom marca la diferencia. Su uso resulta tan natural com acercarte al papel cuando escribes música a mano. ¡Pruébalo!</description>
+</p>
+<p class="content">
+<font class="highlight">Rueda de ratón</font><description>  Hazla girar para acercarte y alejarte</description>
+</p>
+<p class="content">
+<font class="highlight">Zoom de la extensión</font><description>  de un compás, de un sistema, de una página, del espacio de trabajo... ¡con solo clicar la rueda de ratón!</description>
+</p>
+</div>
+<div class="feature" align="left">
+<img class="featureImage" border="0" src="../images/ZoomExtents.png">
+</img>
+</div>
+</div>
+<div class="featureContainerB">
+<div class="feature" align="left">
+<img class="featureImage" border="0" src="../images/Workspace.png">
+</img>
+</div>
+<div align="left" class="feature">
+<p class="title">METÁFORA DEL ESCRITORIO</p>
+<p class="content">
+<font class="highlight"></font><description>Esparce la música por un espacio de trabajo ilimitado</description>
+</p>
+<p class="content">
+<font class="highlight">Partituras sin papel</font><description><br />Esboza tus ideas más allá de los límites del papel</description>
+</p>
+<p class="content">
+<font class="highlight">Explorador de proyecto</font><description><br />Accede fácilmente a las partituras y sus partichelas</description>
+</p>
+</div>
+</div>
+<div class="featureContainerA">
+<div align="left" class="feature">
+<p class="title">INTERFAZ ADAPTADA AL CONTEXTO</p>
+<p class="content">
+<font class="highlight"></font><description>Todas las opciones que necesitas, cuando te hacen falta</description>
+</p>
+<p class="content">
+<font class="highlight">Propiedades</font><description><br />Edita la mayoría de aspectos de los elementos seleccionados</description>
+</p>
+<p class="content">
+<font class="highlight">Paleta contextual</font><description><br />Acciones disponibles para la selección actual</description>
+</p>
+</div>
+<div class="feature" align="left">
+<img class="featureImage" border="0" src="../images/Context.png">
+</img>
+</div>
+</div>
+<div class="featureContainerB">
+<div class="feature" align="left">
+<img class="featureImage" border="0" src="../images/Scratch.png">
+</img>
+</div>
+<div align="left" class="feature">
+<p class="title">CREACIÓN DESDE CERO SENCILLA</p>
+<p class="content">
+<font class="highlight"></font><description>Consigue lo que deseas más deprisa que escojiendo una plantilla</description>
+</p>
+<p class="content">
+<font class="highlight">Añade pentagramas y barras</font><description>  tan fácilmente como con las notas</description>
+</p>
+<p class="content">
+<font class="highlight">Agrupa partichelas</font><description>  y desagrupalas en cualquier momento</description>
+</p>
+<p class="content">
+<font class="highlight">Cambia los instrumentos</font><description>  en un solo clic</description>
+</p>
+</div>
+</div>
+<div class="featureContainerA">
+<div align="left" class="feature">
+<p class="title">EDICIÓN AVANZADA</p>
+<p class="content">
+<font class="highlight">Deshacer/rehacer infinitos</font><description><br />Haz cambios sin miedo, puedes ir atrás tantas veces como quieras</description>
+</p>
+<p class="content">
+<font class="highlight">2 modos de selección por ventana</font><description><br />Hacia la derecha seleccionas todo, hacia la izquierda solo notas</description>
+</p>
+<p class="content">
+<font class="highlight">Copia y pega</font><description>  solo notas o también el pentagrama subyacente</description>
+</p>
+<p class="content">
+<font class="highlight">Arrastra elementos</font><description>  para cambiar la altura de una nota, el ancho de un compás, la distancia entre pentagramas...</description>
+</p>
+<p class="content">
+<font class="highlight">Atajos de teclado</font><description><br />Hay muchos por descubrir cuando te familiarices con DeluxeNote</description>
+</p>
+</div>
+<div class="feature" align="left">
+<img class="featureImage" border="0" src="../images/Edit.png">
+</img>
+</div>
+</div>
+<div class="featureContainerC">
+<div align="left" class="featureWide">
+<p class="title">Y TODO LO QUE ESPERAS DE UN PROGRAMA EDITOR DE PARTITURAS</p>
+<p class="content">
+<font class="highlight">Piano virtual</font><description>  clica en él para insertar notas o simplemente para tocar. También puedes tocar con el teclado del ordenador</description>
+</p>
+<p class="content">
+<font class="highlight">Intérprete de la partitura</font><description>  escucha como DeluxeNote toca tu partitura, ¡mientras sigues trabajando en ella!</description>
+</p>
+<p class="content">
+<font class="highlight">Impresión a PDF</font><description>  o directament a la impresora</description>
+</p>
+<p class="content">
+<font class="highlight">Importar y exportar MusicXML</font><description>  de y hacia otros programas</description>
+</p>
+<p class="content">
+<font class="highlight">Archivos MIDI</font><description>  conviértelos en partituras u obtén grabaciones MIDI a partir de tus partituras</description>
+</p>
+<p class="content">
+<font class="highlight">Idiomas:</font><description>  Inglés, Francés, Español y Catalán</description>
+</p>
+<p class="content" align="center">
+<bottom><br />¿Echas de menos algo? Mira la <a href="roadmap.htm" class="link">Hoja de ruta del desarrollo</a></bottom>
+</p>
+</div>
+</div>
+<div class="footerContainer">
+<div class="leftFooter"><font class="footerOptional">Copyright </font>© 2024 Besuau S.L.U.<font class="footerOptional"> Todos los derechos reservados</font></div>
+<div class="rightFooter">
+<a class="footerLink" href="privacy-policy.htm" title="Privacidad">Privacidad</a>
+<a class="footerLink" href="legal.htm" title="Legal">Legal</a>
+<a class="footerLink" href="company.htm" title="Empresa">Empresa</a>
+</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" xmlns:html="http://www.w3.org/1999/xhtml">
+
 window.setInterval(changeScreenshot,3000);
 var currentPNG=0;
 function changeScreenshot()
 {
 	if (currentPNG<6) currentPNG++;
 	else currentPNG=0;
-	document.getElementById("Screenshot").src="Screenshot"+currentPNG+".png";
+	document.getElementById("Screenshot").src="images/Screenshot"+currentPNG+".png";
 }
-</script>
-</body>
-</html>
+
+	</script>
