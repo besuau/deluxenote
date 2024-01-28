@@ -12,7 +12,7 @@ body
 	align-items: center;
 	margin: 0px;
 	padding: 0px;
-	font-family: verdana, calibri, candara, cambria, helvetica, arial;
+	font-family: verdana, arial;
 }
 
 /**************************************************************************************************/
@@ -259,8 +259,8 @@ a.footerLink::before
 .title
 {
 	color: #000000;
-	font-family: candara, verdana, arial;
-	font-size: 22pt;
+	//font-family: candara, verdana, arial;
+	font-size: 20pt;
 	font-weight: bold;
 }
 
@@ -277,7 +277,6 @@ a.footerLink::before
 	font-size: 12pt;
 	font-weight: bold;
 	line-height: 26px;
-	margin: 0px;
 }
 
 .link
@@ -729,7 +728,7 @@ ul.historyContent
 	{
 		width: calc(100% - 8vw);
 		margin: unset;
-		padding: 0vw 4vw 4vw 4vw;
+		padding: 0vw 4vw 6vw 4vw;
 	}
 	.feature#leftImage
 	{
@@ -782,14 +781,15 @@ ul.historyContent
 
 	.title
 	{
-		font-size: 7vw;
-		padding: 0vw 4vw 0vw 4vw;
+		font-size: 6vw;
+		padding: 0vw 0vw 0vw 4vw;
 	}
 
 	.highlight
 	{
 		font-size: 4.5vw;
 		padding: 0px;
+		//line-height: unset;
 	}
 
 	.content
