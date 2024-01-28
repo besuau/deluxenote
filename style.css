@@ -194,7 +194,8 @@ a:hover.language
 .featureImage
 {
 	display: block;
-	width: 480px;
+	width: 512px;
+	margin: 20px 0px 20px 0px;
 }
 
 /**************************************************************************************************/
@@ -276,6 +277,7 @@ a.footerLink::before
 	font-size: 12pt;
 	font-weight: bold;
 	line-height: 26px;
+	margin: 0px;
 }
 
 .link
@@ -726,7 +728,12 @@ ul.historyContent
 	.featureImage
 	{
 		width: calc(100% - 8vw);
-		padding: 2vw 4vw 2vw 4vw;
+		margin: unset;
+		padding: 0vw 4vw 4vw 4vw;
+	}
+	.feature#leftImage
+	{
+		order: 10;
 	}
 
 	.footerContainer
