@@ -259,7 +259,6 @@ a.footerLink::before
 .title
 {
 	color: #000000;
-	//font-family: candara, verdana, arial;
 	font-size: 20pt;
 	font-weight: bold;
 }
@@ -789,7 +788,7 @@ ul.historyContent
 	{
 		font-size: 4.5vw;
 		padding: 0px;
-		//line-height: unset;
+		line-height: unset;
 	}
 
 	.content
