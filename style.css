@@ -389,7 +389,7 @@ a:hover.pageLink
 .profile
 {
 	display: block;
-	width: 480px;
+	width: 100%;
 	color: #666666;
 	font-size: 12pt;
 	line-height: 26px;
@@ -487,6 +487,58 @@ a:hover.fileLink
 	line-height: 26px;
 	margin: 0px 0px 36px 0px;
 	text-align: center;
+}
+
+.freeProduct
+{
+	display: block;
+	width: 480px;
+	margin-left: 24px;
+	margin-right: 24px;
+	margin-bottom: 40px;
+	padding: 5px 5px 0px 5px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	text-align: center;
+}
+
+input[type=text]
+{
+	width: 320px;
+	margin: 8px;
+	padding: 8px 16px;
+	box-sizing: border-box;
+	font-weight: normal;
+	font-size: 12pt;
+	color: #666666;
+	border: 1px solid #C45911;
+	border-radius: 6px;
+	outline: none;
+}
+input[type=text]:focus
+{
+	border: 2px solid #C45911;
+	padding: 7px 15px;
+}
+
+input[type=submit]
+{
+	margin: 0px;
+	padding: 10px 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C45911;
+	border-radius: 6px;
+	background-color: #f7f7f7;
+	color: #C45911;
+	font-size: 11pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+input[type="submit"]:hover
+{
+	background-color: #ffffff;
 }
 
 /**************************************************************************************************/
@@ -747,7 +799,7 @@ ul.historyContent
 	}
 	.leftFooter
 	{
-		width: 37%;
+		width: 60%;
 		font-size: 3.25vw;
 		padding: 2vw 0vw 2vw 2vw;
 	}
@@ -936,6 +988,41 @@ ul.historyContent
 		font-size: 4vw;
 		line-height: unset;
 		margin: 0vw 0vw 8vw 0vw;
+	}
+
+	.freeProduct
+	{
+		width: 100%;
+		font-size: 4.5vw;
+		line-height: unset;
+		margin: 0vw 0vw 8vw 0vw;
+		padding: 0vw 0vw 0vw 0vw;
+		border-radius: 1.5vw;
+	}
+
+	input[type=text]
+	{
+		margin: 4vw 0vw 0vw 0vw;
+		padding: 2vw 4vw;
+		width: 75%;
+		font-size: 4.5vw;
+		border: 0.3vw solid #C45911;
+		border-radius: 2.5vw;
+		outline: none;
+	}
+	input[type=text]:focus
+	{
+		padding: 1.7vw 3.7vw;
+		border: 0.6vw solid #C45911;
+	}
+
+	input[type=submit]
+	{
+		margin: 0px;
+		padding: 2.5vw 5vw;
+		border-width: 0.3vw;
+		border-radius:1.5vw;
+		font-size: 4.5vw;
 	}
 
 	.roadmapLegend
